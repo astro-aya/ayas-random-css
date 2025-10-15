@@ -387,7 +387,7 @@
 .biteSizeOuter_c69a7b.userPopoutOuter_c69a7b .menu_c1e9c4 {
   border: 1px solid hsla(0, 0%, 50%, 0.4);
   border-radius: 15px !important;
-  background-color: var(--profile-body-background-color) !important;
+  background-color: var(--profile-gradient-modal-background-color) !important;
 }
 .status_a423bd {
   background-color: #5865F2 !important;
@@ -396,22 +396,23 @@
 /* redesigned user areas v2 */ 
 /* badge island */
 .container__8061a {
-  background-color: var(--profile-body-background-color) !important;
-  border: 1px solid var(--profile-gradient-button-color) !important;
+  background-color: var(--profile-gradient-modal-background-color) !important;
+  border: 1px solid var(--profile-gradient-secondary-color) !important;
   border-radius: 15px;
   padding: 0.5px 4px 0.5px 4px !important;
 }
 /* username and pronoun islands */
 .tags__63ed3 .pronounsText__63ed3, .tags__63ed3 .userTagUsername__63ed3 {
-  background-color: var(--profile-body-background-color) !important;
-  border: 1px solid var(--profile-gradient-button-color) !important;
+  background-color: var(--profile-gradient-modal-background-color) !important;
+  border: 1px solid var(--profile-gradient-secondary-color) !important;
   border-radius: 15px;
   text-align: center !important;
   padding: 1px 4px 1px 5px !important;
 }
 /* clan tag island */
 .tags__63ed3 .guildTagContainer__63ed3 {
-  border: 1px solid var(--profile-gradient-button-color) !important;
+  background-color: var(--profile-gradient-modal-background-color) !important;
+  border: 1px solid var(--profile-gradient-secondary-color) !important;
   border-radius: 15px;
   padding: 1px !important;
   height: 22px;
@@ -425,8 +426,8 @@
 }
 
 .body_ce8328 .overlay_c0bea0 {
-  background-color: var(--profile-body-background-color) !important;
-  outline: 1px solid var(--profile-gradient-button-color) !important;
+  background-color: var(--profile-gradient-modal-background-color) !important;
+  outline: 1px solid var(--profile-gradient-secondary-color) !important;
 }
 
 .tags__63ed3 .dotSpacer__63ed3 {
@@ -434,8 +435,8 @@
 }
 
 [class*="connectedAccountContainer_"], .body__24502 .overlay_c0bea0, .body__5be3e .overlay_c0bea0 {
-  background-color: var(--profile-body-background-color) !important;
-  border: 1px solid var(--profile-gradient-button-color) !important;
+  background-color: var(--profile-gradient-modal-background-color) !important;
+  border: 1px solid var(--profile-gradient-secondary-color) !important;
   border-radius: 8px;
 }
 
@@ -452,7 +453,7 @@
 /* spot 2 */
 
 /* new compact status picker v2 */
-[aria-activedescendant="set-status-submenu-online"] .scroller_c1e9c4, [aria-activedescendant="set-status-submenu-idle"] .scroller_c1e9c4, [aria-activedescendant="set-status-submenu-dnd"] .scroller_c1e9c4, [aria-activedescendant="set-status-submenu-invisible"] .scroller_c1e9c4 {
+/* [aria-activedescendant="set-status-submenu-online"] .scroller_c1e9c4, [aria-activedescendant="set-status-submenu-idle"] .scroller_c1e9c4, [aria-activedescendant="set-status-submenu-dnd"] .scroller_c1e9c4, [aria-activedescendant="set-status-submenu-invisible"] .scroller_c1e9c4 {
   border: 1px transparent solid;
   max-height: 61px;
   max-width: 216px;
@@ -507,61 +508,54 @@
 .colorDefault_c1e9c4 {
   border-radius: 10px;
   transition: 300ms;
-}
+} */
 
-/* accounts menu status icon coloring */
+/* user panel status icon coloring */
 .container__37e49 .mask__44b0c.svg__44b0c [fill="#43a25a"], .container__37e49 .mask__44b0c.svg__44b0c [fill="#ca9654"], .container__37e49 .mask__44b0c.svg__44b0c [fill="#d83a42"], .container__37e49 .mask__44b0c.svg__44b0c [fill="#82838b"] {
   fill: #5865F2;
   transition: 500ms;
 }
 
-/* bottom left panels adjustments */
+/* user and activity panels */
 .visual-refresh section.panels_c48ade {
-  margin-left: 88px !important;
+  margin-left: 87px !important;
   border: none !important;
-  width: calc(var(--custom-guild-sidebar-width) - var(--custom-guild-list-width) - 1px ) !important;
+  width: calc(var(--custom-guild-sidebar-width) - var(--custom-guild-list-width) + 1px ) !important;
   .actionButtons_e131a9 button {
     padding: 0;
   }
 }
-.panels_c48ade {
-  margin-bottom: -9px; /* improve this */
-}
-.panels_c48ade > div:not(.mask__0d616) {
+
+.container__37e49, .listeningAlong_e0cf27, #vc-spotify-player, .activityPanel_c48ade, .container_e131a9 {
+  background-color: var(--background-secondary-alt);
+  border: 1px solid hsla(0, 0%, 50%, 0.36);
   border-radius: 16px;
-  background-color: var(--bg-overlay-1, var(--background-secondary-alt)) !important;
-  margin-top: 6px !important;
 }
-
-/* .postEnrollmentBackground__636a2 { /*figure out quest shit */ /*
-  border-radius: 16px !important;
-  background-color: red !important;
+.container__37e49 {
+  height: 66px;
+  margin-top: 6px;
 }
-.content__60686  {
-  background: transparent !important;
-} */
-
+.listeningAlong_e0cf27 {
+  margin-top: 6px;
+}
+#vc-spotify-player {
+  margin-top: 6px;
+}
+.activityPanel_c48ade, .container_e131a9 {
+  margin-top: 6px;
+}
 
 /* sidebar */
-.sidebarResizeHandle_c48ade {
-  height: calc((var(--custom-app-panels-height) * -1) + 99.5%) !important; 
-  border-bottom-right-radius: 12px !important;
-}
+/* search --custom-app-panels-height */
 .visual-refresh .container__2637a {
   padding-bottom: 0;
 }
 .scroller__99e7c  {
   margin-bottom: 0 !important;
 } 
-
 nav.guilds_c48ade {
   margin-bottom: 0 !important;
 }
-/* .sidebarListRounded_c48ade {
-  border: 0px transparent !important;
-} */
-
-
 
 .visual-refresh #popout_43 {
   left: 100px !important;
@@ -992,43 +986,44 @@ html:not(.app-focused) .newMessagesBar__0f481 {
 }
 
 /* Brighter Status Text for Custom Profiles */ /* base theme */ /* credits needed */ /* redesign */
-.custom-profile-theme [class^=statusBubble_] [class^=defaultColor_] {
+.custom-user-profile-theme [class^=outer_] [class^=defaultColor_] {
   color: var(--white-500);
 }
 /* Match Status Bubble Color with Profile Button Color for Custom Profiles */
-.custom-profile-theme [class^=statusBubble_],
-.custom-profile-theme [class^=statusBubbleOuter_]:before,
-.custom-profile-theme [class^=statusBubbleOuter_]:after {
-  background-color: var(--profile-gradient-button-color);
+.custom-user-profile-theme .container_ab8609 [class^=outer_],
+.custom-user-profile-theme .container_ab8609 [class^=inner_],
+.custom-user-profile-theme .container_ab8609 [class^=outer_]:before,
+.custom-user-profile-theme .container_ab8609 [class^=outer_]:after {
+  background-color: var(--profile-gradient-modal-background-color);
 }
 /* Match Activity Buttons Color with Profile Button Color for Custom Profiles */
-.custom-profile-theme [class^=activityBiteSizePopout_] button,
-.custom-profile-theme [class^=activitySimplifiedProfile_] button {
-  background-color: var(--profile-gradient-button-color)!important;
+.custom-user-profile-theme [class^=activityBiteSizePopout_] button,
+.custom-user-profile-theme [class^=activitySimplifiedProfile_] button {
+  background-color: var(--profile-gradient-secondary-color)!important;
 }
 /* Match Badges Border Color with Profile Button Color for Custom Profiles */
-.custom-profile-theme [aria-label="User Badges"] {
-  border-color: var(--profile-gradient-button-color);
+.custom-user-profile-theme [aria-label="User Badges"] {
+  border-color: var(--profile-gradient-secondary-color);
 }
 /* Match Full Size Profile Box Border Color with Profile Button Color for Custom Profiles */
-.custom-profile-theme [class^=fullSizeOverlayBackground] {
-  border-color: var(--profile-gradient-button-color)!important;
+.custom-user-profile-theme [class^=fullSizeOverlayBackground] {
+  border-color: var(--profile-gradient-secondary-color)!important;
 }
 /* Match Clan Button Color with Profile Button Color for Custom Profiles */
-.custom-profile-theme [class^=chipletContainerInner_] {
-  background: var(--profile-gradient-button-color);
+.custom-user-profile-theme [class^=chipletContainerInner_] {
+  background: var(--profile-gradient-secondary-color);
 }
 /* Match Show More Roles and View Permissions (Permissions Plugin) Border Color with Profile Button Color for Custom Profiles */
-.custom-profile-theme :is([class^=showMoreButton_], .vc-permviewer-role-button)  {
-  border-color: var(--profile-gradient-button-color);
+.custom-user-profile-theme :is([class^=showMoreButton_], .vc-permviewer-role-button)  {
+  border-color: var(--profile-gradient-secondary-color);
 }
 /* Add Border to Activities and Match with Profile Button Color for Custom Profiles */
-.custom-profile-theme [class^=activityBiteSizePopout_] {
-    border: 1px solid var(--profile-gradient-button-color);
+.custom-user-profile-theme [class^=activityBiteSizePopout_] {
+    border: 1px solid var(--profile-gradient-secondary-color);
 }
 /* Match Connections Border Color with Profile Button Color for Custom Profiles */
-.custom-profile-theme [class^=connectedAccountContainer_] {
-    border-color: var(--profile-gradient-button-color);
+.custom-user-profile-theme [class^=connectedAccountContainer_] {
+    border-color: var(--profile-gradient-secondary-color);
 }
 
 /* remove member list recent activity section */ /* personal */
@@ -2108,72 +2103,6 @@ time[datetime]:hover::after {
     ry: 2;
 }
 
-/* -User */
-
-/*
-.panels_c48ade .avatarWrapper__37e49 {
-    position: fixed;
-    right: 0;
-    top: 0;
-    margin-right: 190px;
-    margin-top: 8px;
-    transform: scale(0.88);
-    transform-origin: center;
-    -webkit-app-region: no-drag;
-}
-.panels_c48ade .avatarWrapper__37e49 .wrapper-1VLyxH foreignObject {
-    border-radius: 50%;
-    border: 1px solid var(--text-normal);
-}
-#app-mount #status-picker {
-    width: 324px;
-}
-div[style*="52.08"] {
-    right: 194px !important;
-    width: 324px !important;
-    left: unset !important;
-}
-*/
-.panels_c48ade {
-    min-height: 80px !important;
-    background-color: var(--background-tertiary);
-}
-.container__37e49 {
-    height: 66px;
-    background-color: var(--background-secondary-alt);
-    margin: 6px 0 8px 0;
-    border-radius: 8px;
-    border: 1px solid hsla(0, 0%, 50%, 0.36);
-}
-.container_6sXIoE, #vc-spotify-player {
-    background-color: var(--background-secondary-alt);
-    margin-top: 6px;
-    border-radius: 8px;
-    border: 1px solid hsla(0, 0%, 50%, 0.36);
-}
-.activityPanel_c48ade, .container_e131a9, .container-6sXIoE {
-    background-color: var(--bg-overlay-1, var(--background-secondary-alt)) !important;
-    margin: 5px 0 0 0;
-    border-radius: 8px;
-    border-bottom: none;
-    border: 1px solid hsla(0, 0%, 50%, 0.36);
-}
-
-.listeningAlong_e0cf27 {
-    background-color: var(--background-secondary-alt);
-    margin: 8px 0 0 0;
-    border-radius: 8px;
-    border-bottom: none;
-    border: 1px solid hsla(0, 0%, 50%, 0.36);
-}
-
-.flex__7c0ba.flex_abf706.horizontal__7c0ba.horizontal_abf706.flex_abf706.directionRow__65900.justifyStart_abf706.alignStretch_abf706.noWrap_abf706 {
-    max-width: 82%;
-}
-.container-6sXIoE.maximized-vv2Wr0.withTimeline-824fT_ .flex__7c0ba.flex_abf706.horizontal__7c0ba.horizontal_abf706.flex_abf706.directionRow__65900.justifyStart_abf706.alignStretch_abf706.noWrap_abf706 {
-    max-width: 100%;
-}
-
 /* -Add Friend */
 
 .item__133bf.item-3XjbnG[aria-controls=add_friend-tab]{
@@ -3196,8 +3125,7 @@ div[style*="52.08"] {
 }
 .sidebarList_c48ade {
   margin-left: 7px !important;
-  margin-bottom: 8px;
-  height: calc((var(--custom-app-panels-height) * -1) + 100% + -1px) !important;
+  height: calc((var(--custom-app-panels-height) * -1) + 99.5% - 1px) !important;
 }
 .wrapper_ef3116 {
   margin: 7px 5px 0px 9px !important;
