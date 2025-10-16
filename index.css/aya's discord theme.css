@@ -545,6 +545,11 @@
   margin-top: 6px;
 }
 
+/* temporary mute/deafen extras button removal */
+[class*="micButtonParent"] [aria-label*="Options"] {
+  display: none;
+}
+
 /* sidebar */
 /* search --custom-app-panels-height */
 .visual-refresh .container__2637a {
@@ -799,7 +804,6 @@ button.button__67645:not([aria-label="Disconnect"], [aria-label="Noise Suppressi
   fill: #6c0023;
 }
 
-
 /* andy! */
 [aria-label="andourys, Online"] svg [fill="#43a25a"], [aria-label="andourys, Online via mobile"] svg [fill="#43a25a"], [aria-label="andourys, Idle"] svg [fill="#ca9654"], [aria-label="andourys, Do Not Disturb"] svg [fill="#d83a42"], [aria-label="andourys, Offline"] svg [fill="#82838b"], [aria-label="andourys, Invisible"] svg [fill="#82838b"], [aria-label="andourys, Streaming"] svg [fill="#9147ff"], [aria-label="andourys"] .vc-platform-indicator svg, [data-author-id="1047432335357902921"] .vc-platform-indicator svg, [href="/channels/@me/1137440358385594450"] .vc-platform-indicator svg {
   fill: #52b9f8;
@@ -1043,7 +1047,7 @@ html:not(.app-focused) .newMessagesBar__0f481 {
   border: 2px solid #494b4d;
   background-color: var(--background-base-lowest) !important;
 }
-.picker__09f65 .wrapper__6c798 {
+.picker__09f65 .wrapper_d852db {
   background-color: var(--background-base-lowest) !important;
   border-left: 2px solid #494b4d;
   border-bottom: 2px solid #494b4d;
@@ -1052,7 +1056,7 @@ html:not(.app-focused) .newMessagesBar__0f481 {
 .picker__09f65 .header__0856d {
   border-bottom: 1px solid #494b4d;
 }
-.picker__09f65 .wrapper__6c798 {
+.picker__09f65 .wrapper_d852db {
   border-left: 1px solid #494b4d;
 }
 .picker__09f65 .sectionHeaderContent__61424 {
@@ -1063,7 +1067,7 @@ html:not(.app-focused) .newMessagesBar__0f481 {
   width: 446px;
 }
 
-/* .picker__09f65 .wrapper__6c798 [class*="listItems_"] {
+/* .picker__09f65 .wrapper_d852db [class*="listItems_"] {
   transform: translateX( 5% );
 } */
 
