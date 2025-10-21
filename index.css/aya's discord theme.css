@@ -1014,9 +1014,9 @@ html:not(.app-focused) .newMessagesBar__0f481 {
   border-color: var(--profile-gradient-secondary-color)!important;
 }
 /* Match Clan Button Color with Profile Button Color for Custom Profiles */
-.custom-user-profile-theme [class^=chipletContainerInner_] {
+/* .custom-user-profile-theme [class^=chipletContainerInner_] {
   background: var(--profile-gradient-secondary-color);
-}
+} */
 /* Match Show More Roles and View Permissions (Permissions Plugin) Border Color with Profile Button Color for Custom Profiles */
 .custom-user-profile-theme :is([class^=showMoreButton_], .vc-permviewer-role-button)  {
   border-color: var(--profile-gradient-secondary-color);
