@@ -545,10 +545,20 @@
   margin-top: 6px;
 }
 
-/* temporary mute/deafen extras button removal */
+/* temporary mute/deafen options dropdown button removal */
 [class*="micButtonParent"] [aria-label*="Options"] {
   display: none;
 }
+/* alternative */
+/* div[class^=micButtonParent__] {
+  button[role="switch"] {
+    border-radius: var(--radius-sm) !important;
+    
+    ~ button {
+      display: none;
+    }
+  }
+} */
 
 /* sidebar */
 /* search --custom-app-panels-height */
