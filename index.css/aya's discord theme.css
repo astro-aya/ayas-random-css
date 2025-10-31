@@ -526,7 +526,7 @@
   }
 }
 
-.container__37e49, .listeningAlong_e0cf27, #vc-spotify-player, .activityPanel_c48ade, .container_e131a9 {
+.container__37e49, .listeningAlong_e0cf27, #vc-spotify-player, .activityPanel__5e434, .container_e131a9 {
   background-color: var(--background-secondary-alt);
   border: 1px solid hsla(0, 0%, 50%, 0.36);
   border-radius: 16px;
@@ -541,7 +541,7 @@
 #vc-spotify-player {
   margin-top: 6px;
 }
-.activityPanel_c48ade, .container_e131a9 {
+.activityPanel__5e434, .container_e131a9 {
   margin-top: 6px;
 }
 
