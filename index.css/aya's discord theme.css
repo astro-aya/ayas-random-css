@@ -16,7 +16,7 @@
 /* credits needed */
 
 /* Home Button Custom Icon */ /* customizable */
-#app-mount .guilds_c48ade .tutorialContainer__1f388 .listItem__650eb:first-child .wrapper__6e9f8:before {
+#app-mount .guilds__5e434  .tutorialContainer__1f388 .listItem__650eb:first-child .wrapper__6e9f8:before {
   content: "";
   border-radius: 100%;
   position: absolute;
@@ -308,15 +308,15 @@
 /* Pin Home Button */ /* check back */ /* base theme */
 [aria-label="Boost this server"] {display: none;}
 
-.guilds_c48ade .tree_ef3116:focus {
+.guilds__5e434  .tree_ef3116:focus {
   outline-color: transparent;
 }
 
-.guilds_c48ade .scroller_ef3116 {
+.guilds__5e434  .scroller_ef3116 {
   contain: unset;
-  margin-top: 60px;
+  margin-top: 56px;
 }
-.guilds_c48ade .scroller_ef3116 .tutorialContainer__1f388 {
+.guilds__5e434  .scroller_ef3116 .tutorialContainer__1f388 {
   position: fixed;
   transform: translatey( -103% );
 }
@@ -517,7 +517,7 @@
 }
 
 /* user and activity panels */
-.visual-refresh section.panels_c48ade {
+.visual-refresh section.panels__5e434 {
   margin-left: 87px !important;
   border: none !important;
   width: calc(var(--custom-guild-sidebar-width) - var(--custom-guild-list-width) + 1px ) !important;
@@ -568,7 +568,7 @@
 .scroller__99e7c  {
   margin-bottom: 0 !important;
 } 
-nav.guilds_c48ade {
+nav.guilds__5e434  {
   margin-bottom: 0 !important;
 }
 
@@ -1057,7 +1057,7 @@ html:not(.app-focused) .newMessagesBar__0f481 {
   border: 2px solid #494b4d;
   background-color: var(--background-base-lowest) !important;
 }
-.picker__09f65 .wrapper_d852db {
+.picker__09f65 .wrapper__6c798 {
   background-color: var(--background-base-lowest) !important;
   border-left: 2px solid #494b4d;
   border-bottom: 2px solid #494b4d;
@@ -1066,7 +1066,7 @@ html:not(.app-focused) .newMessagesBar__0f481 {
 .picker__09f65 .header__0856d {
   border-bottom: 1px solid #494b4d;
 }
-.picker__09f65 .wrapper_d852db {
+.picker__09f65 .wrapper__6c798 {
   border-left: 1px solid #494b4d;
 }
 .picker__09f65 .sectionHeaderContent__61424 {
@@ -1077,7 +1077,7 @@ html:not(.app-focused) .newMessagesBar__0f481 {
   width: 446px;
 }
 
-/* .picker__09f65 .wrapper_d852db [class*="listItems_"] {
+/* .picker__09f65 .wrapper__6c798 [class*="listItems_"] {
   transform: translateX( 5% );
 } */
 
@@ -1639,11 +1639,11 @@ time[datetime]:hover::after {
     background: -webkit-gradient(linear,left top,right top,from(rgba(54,57,63,0)),to(var(--background-secondary)));
     background: linear-gradient(90deg,rgba(54,57,63,0) 0,var(--background-secondary));
 }
-#app-mount .sidebarList_c48ade {
+#app-mount .sidebarList__5e434 {
     border-radius: 16px !important;
     border: 1px solid hsla(0, 0%, 50%, 0.36) !important;
 }
-#app-mount .sidebarList_c48ade {
+#app-mount .sidebarList__5e434 {
     background-color: transparent;
 }
 #app-mount .container__2637a .animatedContainer_f37cb1 {
@@ -1661,7 +1661,7 @@ time[datetime]:hover::after {
 
 /* -Discover */
 
-.sidebarList_c48ade .thin__99f8c[dir=ltr] {
+.sidebarList__5e434 .thin__99f8c[dir=ltr] {
     border-radius: 8px;
     border: 1px solid hsla(0, 0%, 50%, 0.36);
 }
@@ -3122,22 +3122,19 @@ time[datetime]:hover::after {
 }
 
 /* other changes */
-.appMount__51fd7, .app__160d8, .bg__960e4, .panels_c48ade {
+.appMount__51fd7, .app__160d8, .bg__960e4, .panels__5e434 {
   background: transparent !important;
 }
 .container__2637a, #vc-spotify-player, .container__37e49, .layers__960e4, .privateChannels__35e86, .panel__5dec7, .container_e131a9 {
   border-radius: 16px !important;
 }
 
-
-
-
 /* section spacing */
 .chat_f75fb0 {
   margin-left: 7px !important;
   margin-right: 6px !important;
 }
-.sidebarList_c48ade {
+.sidebarList__5e434 {
   margin-left: 7px !important;
   height: calc((var(--custom-app-panels-height) * -1) + 99.5% - 1px) !important;
 }
@@ -3151,11 +3148,9 @@ time[datetime]:hover::after {
   /* find something better, maybe use overflow for scrolling */
 }
 
-
-.visual-refresh .sidebar_c48ade:after {
+.visual-refresh .sidebar__5e434:after {
   display: none;
 }
-
 
 /* member list fix */
 .chat_f75fb0 .scroller__36d07 {
