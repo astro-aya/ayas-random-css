@@ -2,6 +2,7 @@
 /* Account Details Grid */ @import url(//dablulite.github.io/css-snippets/AccountDetailsGrid/import.css);
 /* Better version of the new expanded profile */ @import url("https://raw.githubusercontent.com/Augenbl1ck/Discord-Styles/refs/heads/main/expProfile.css");
 /* Better Compact Command Menu */ /*@import url("https://raw.githubusercontent.com/acheronx0577/Better-Compact-Command-Menu-With-Smooth-Transition/refs/heads/main/Better%20Compact%20Command%20Menu%20With%20Smooth%20Transition.css"); (has the issue of making text white despite the bg)*/
+/* insane chatbar button dropdown menu */ /* @import url(https://davart154.github.io/Themes/Snippets/Chat%20Bar%20Context%20Menu/ChatContextMenuSource.css); */
 
 /* personal */ 
 /* base theme */
@@ -29,7 +30,7 @@
 }
 
 /* Santa hat */ /* customizable */
-/*.message__5126c.groupStart__5126c:not(.systemMessage__5126c) .contents_c19a55::before {
+/* .message__5126c.groupStart__5126c:not(.systemMessage__5126c) .contents_c19a55::before {
   content: '';
   width: 48px;
   height: 28px;
@@ -38,12 +39,7 @@
   z-index: 99999;
   position: absolute;
   pointer-events: none;
-}*/
-
-/* Hide help icon */ /* icons */
-.toolbar__9293f a {
-  display: none;
-}
+} */
 
 /* Custom Window Bar Text */ /* customizable */
 /* @font-face {font-family: "Discordinated"; src: url("https://kckarnige.is-a.dev/femboi_owo/DISCORDINATED.woff");} */
@@ -664,17 +660,6 @@ nav.guilds__5e434  {
   filter: brightness(0.5) saturate(3);
 }
 
-/* pfp decoration ad hider */ /* nitro */
-.containerWrapper_e18107 {
-  display: none;
-}
-
-/* shop tab killer */ /* check back */ /* nitro */
-.channel__972a0 .linkButton__972a0 > .link__972a0[href="/shop"],
-.channel__972a0 .linkButton__972a0 > .link__972a0[href="/store"] {
-  display: none;
-}
-
 /* ----- some vencord changes ----- */ /* plugin specific */
 /* recolor the friend count fr */
 #vc-friendcount {
@@ -878,11 +863,6 @@ button.button__67645:not([aria-label="Disconnect"], [aria-label="Noise Suppressi
 /* megan! */
 [aria-label="whosmeggy, Online"] svg [fill="#43a25a"], [aria-label="whosmeggy, Online via mobile"] svg [fill="#43a25a"], [aria-label="whosmeggy, Idle"] svg [fill="#ca9654"], [aria-label="whosmeggy, Do Not Disturb"] svg [fill="#d83a42"], [aria-label="whosmeggy, Offline"] svg [fill="#82838b"], [aria-label="whosmeggy, Invisible"] svg [fill="#82838b"], [aria-label="whosmeggy, Streaming"] svg [fill="#9147ff"], [aria-label="whosmeggy"] .vc-platform-indicator svg, [data-author-id="351580550055723019"] .vc-platform-indicator svg, [href="/channels/@me/1383627431625232466"] .vc-platform-indicator svg {
   fill: #9a7acf;
-}
-
-/* afri! */
-[aria-label="im.afrii_, Online"] svg [fill="#43a25a"], [aria-label="im.afrii_, Online via mobile"] svg [fill="#43a25a"], [aria-label="im.afrii_, Idle"] svg [fill="#ca9654"], [aria-label="im.afrii_, Do Not Disturb"] svg [fill="#d83a42"], [aria-label="im.afrii_, Offline"] svg [fill="#82838b"], [aria-label="im.afrii_, Invisible"] svg [fill="#82838b"], [aria-label="im.afrii_, Streaming"] svg [fill="#9147ff"], [aria-label="im.afrii_"] .vc-platform-indicator svg, [data-author-id="967884598975529030"] .vc-platform-indicator svg, [href="/channels/@me/1391079358562828351"] .vc-platform-indicator svg {
-  fill: #bff1ff;
 }
 
 /* var! */
@@ -1311,11 +1291,6 @@ html:not(.app-focused) .newMessagesBar__0f481 {
   bottom: 0px;
   z-index: 999;
   background: var(--bg-overlay-1, var(--background-secondary));
-}
-
-/* hide yet ANOTHER useless and intrusive nitro ad */ /* nitro */
-[class*="outer_"] [class*="upsell"] {
-  display: none;
 }
 
 /* toggle redesign */ /* base theme */
