@@ -512,7 +512,7 @@
   transition: 500ms;
 }
 
-/* user and activity panels */
+/* user panels */
 .visual-refresh section.panels__5e434 {
   margin-left: 87px !important;
   border: none !important;
@@ -522,11 +522,77 @@
   }
 }
 
+.container__37e49 .avatarWrapper__37e49 {
+  min-width: 0; 
+  transition: ease-in-out 0.3s;
+}
+.container__37e49 .avatarWrapper__37e49:hover {
+  min-width: 105%; 
+  transition: ease-in-out 0.3s;
+}
+.avatarWrapper__37e49 .nameTag__37e49 {
+  opacity: 0;
+  transition: ease-in-out 0.3s;
+}
+.avatarWrapper__37e49:hover .nameTag__37e49 {
+  opacity: 100%;
+  transition: ease-in-out 0.3s;
+}
+.avatarWrapper__37e49:hover {
+  background-color: transparent !important;
+}
+
+/* vc panel redesign */
+.container_e131a9 {
+  height: auto;
+  padding: 8px !important;
+}
+.wrapper_e131a9 .actionButtons_e131a9 button {
+  border-radius: 8px !important;
+  border: none;
+}
+.container_e131a9 .connection_e131a9 {
+  padding: 6px 4px;
+}
+.align-chat-input [class*="panels"] [class*="inner_"], .align-chat-input [class*="rtcConnectionStatus_"] { /* update this */
+  height: fit-content;
+}
+
+.container_e131a9 .connection_e131a9 .inner_e131a9 {
+  min-width: 105%;
+  transition: ease-in-out 0.3s;
+}
+.container_e131a9 .connection_e131a9:hover .inner_e131a9 {
+  min-width: 50%;
+  transition: ease-in-out 0.3s;
+}
+.labelWrapper__06d62 .lineClamp1__4bd52 span {
+  margin-right: 10px;
+}
+
+
+/* spotify panels */
 .container__37e49, .listeningAlong_e0cf27, #vc-spotify-player, .activityPanel__5e434, .container_e131a9 {
   background-color: var(--background-secondary-alt);
   border: 1px solid hsla(0, 0%, 50%, 0.36);
   border-radius: 16px;
 }
+
+.listeningAlong_e0cf27 .text-sm-normal__95a78.title_d1da5f {
+  width: 50px;
+  overflow: visible;
+}
+.listeningAlong_e0cf27 .text-xs-normal__46d75.subtext__339d0 {
+  color: #5865F2;
+}
+.listeningAlong_e0cf27 .container_b2d72f {
+  background-color: #232428;
+  outline: 4px #232428 solid;
+  padding: 2px;
+  border-left: 1px solid #232428;
+}
+
+/* user panels spacing */
 .container__37e49 {
   height: 66px;
   margin-top: 6px;
@@ -555,6 +621,7 @@
     }
   }
 } */
+
 
 /* sidebar */
 /* search --custom-app-panels-height */
@@ -2940,11 +3007,8 @@ time[datetime]:hover::after {
 **/
 
 /* -----sidebar collapse theme----- */ 
-/* vencord avatar decoration fix (only works in quick css) */
-.avatarWrapper__37e49 .avatarDecoration__44b0c {
-  position: relative !important;
-}
 
+/* ----- collapsing member list----- */
 /* -----member list----- */
 .container_c8ffbb {
   min-width: unset !important;
@@ -2954,25 +3018,12 @@ time[datetime]:hover::after {
   min-width: unset !important;
   max-width: 65px;
 }
-.membersWrap_c8ffbb .members_c8ffbb:hover {
-  box-shadow: 0px 1px 5px 15px rgba(43,45,49,1);
-  translate: -180px 0px;
-}
+/* .container_c8ffbb .membersWrap_c8ffbb .members_c8ffbb.thin_d125d2:hover {
+  translate: -170px 0px;
+} */
 .container_c8ffbb .membersWrap_c8ffbb .members_c8ffbb:hover {
   translate: -90px 0px;
   padding-bottom: 3000px; 
-}
-.container_c8ffbb .membersWrap_c8ffbb .members_c8ffbb.thin_d125d2:hover {
-  translate: -170px 0px;
-}
-/* role name in member list overflow fix */
-.membersGroup_c8ffbb {
-  overflow: hidden;
-}
-
-/* normal shit */
-.membersWrap_c8ffbb {
-  min-width: unset !important;
 }
 .membersWrap_c8ffbb .members_c8ffbb {
   max-width: 65px;
@@ -2985,91 +3036,6 @@ time[datetime]:hover::after {
   min-width: 240px;
   transition: 500ms;
 }
-
-/* -----channel buttons/names fix----- */
-.channelName-3KPsGw {
-  overflow: visible;
-}
-.children__2ea32 {
-  display: none;
-}
-
-/* -----chat search position fix----- */ 
-.searchResultsWrap_a9e706 {
-  position: relative;
-  margin-left: -52px;
-}
-
-/* -----spotify listening along fix----- */
-.listeningAlong_e0cf27 .text-sm-normal__95a78.title_d1da5f {
-  width: 50px;
-  overflow: visible;
-}
-.listeningAlong_e0cf27 .text-xs-normal__46d75.subtext__339d0 {
-  color: #5865F2;
-}
-.listeningAlong_e0cf27 .container_b2d72f {
-  background-color: #232428;
-  outline: 4px #232428 solid;
-  padding: 2px;
-  border-left: 1px solid #232428;
-}
-
-/* -----vc panel fix----- */
-
-.container_e131a9 {
-  height: auto;
-  padding: 8px !important;
-}
-/* .container_e131a9 [class*="Buttons"] {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-} */
-.wrapper_e131a9 .actionButtons_e131a9 button {
-  border-radius: 8px !important;
-  border: none;
-}
-.container_e131a9 .connection_e131a9 {
-  padding: 6px 4px;
-}
-.align-chat-input [class*="panels"] [class*="inner_"], .align-chat-input [class*="rtcConnectionStatus_"] { /* update this */
-  height: fit-content;
-}
-
-.container_e131a9 .connection_e131a9 .inner_e131a9 {
-  min-width: 105%;
-  transition: ease-in-out 0.3s;
-}
-.container_e131a9 .connection_e131a9:hover .inner_e131a9 {
-  min-width: 50%;
-  transition: ease-in-out 0.3s;
-}
-.labelWrapper__06d62 .lineClamp1__4bd52 span {
-  margin-right: 10px;
-}
-
-/* -----profile popout revert and fixes----- */
-.avatarWrapper__37e49:hover {
-  background-color: transparent !important;
-}
-.nameTag__37e49.canCopy__37e49 {
-  display: none;
-}
-.wrapper__44b0c.avatar__37e49 {
-  border-radius: 4px;
-  padding: 3px;
-}
-.wrapper__44b0c.avatar__37e49:hover {
-  background-color: #4E505899;
-}
-
-/* dms list scrollbar */
-.scroller__99e7c::-webkit-scrollbar, .members_c8ffbb::-webkit-scrollbar {
-  display: none;
-}
-.scroller__99e7c {
-  margin-right: 8px; 
-} 
 
 /**
  * @name Floaty discord :3
