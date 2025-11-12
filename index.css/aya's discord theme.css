@@ -3,6 +3,8 @@
 /* Better version of the new expanded profile */ @import url("https://raw.githubusercontent.com/Augenbl1ck/Discord-Styles/refs/heads/main/expProfile.css");
 /* Better Compact Command Menu */ /*@import url("https://raw.githubusercontent.com/acheronx0577/Better-Compact-Command-Menu-With-Smooth-Transition/refs/heads/main/Better%20Compact%20Command%20Menu%20With%20Smooth%20Transition.css"); (has the issue of making text white despite the bg)*/
 /* insane chatbar button dropdown menu */ /* @import url(https://davart154.github.io/Themes/Snippets/Chat%20Bar%20Context%20Menu/ChatContextMenuSource.css); */
+/* sticker search page selector */ @import url("https://raw.githubusercontent.com/yiruzu/vencord-snippets/refs/heads/main/snippets/StickyPager/import.css");
+/* show username and status simultaneously*/ /* @import url("https://raw.githubusercontent.com/KrstlSkll69/vc-snippets/main/OtherStuff/ViewBoth.css"); */
 
 /* personal */ 
 /* base theme */
