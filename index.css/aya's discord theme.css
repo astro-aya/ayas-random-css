@@ -1,11 +1,11 @@
 /* settings icons */ /*@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/SettingsIcons.css);
 /* Account Details Grid */ @import url(//dablulite.github.io/css-snippets/AccountDetailsGrid/import.css);
 /* Better version of the new expanded profile */ @import url("https://raw.githubusercontent.com/Augenbl1ck/Discord-Styles/refs/heads/main/expProfile.css");
-/* Better Compact Command Menu */ /*@import url("https://raw.githubusercontent.com/acheronx0577/Better-Compact-Command-Menu-With-Smooth-Transition/refs/heads/main/Better%20Compact%20Command%20Menu%20With%20Smooth%20Transition.css"); (has the issue of making text white despite the bg)*/
+/* Better Compact Command Menu */ /*@import url("https://raw.githubusercontent.com/acheronx0577/Better-Compact-Command-Menu-With-Smooth-Transition/refs/heads/main/Better%20Compact%20Command%20Menu%20With%20Smooth%20Transition.css"); (has the issue of making text white despite the bg)
 /* insane chatbar button dropdown menu */ /* @import url(https://davart154.github.io/Themes/Snippets/Chat%20Bar%20Context%20Menu/ChatContextMenuSource.css); */
 /* sticker search page selector */ @import url("https://raw.githubusercontent.com/yiruzu/vencord-snippets/refs/heads/main/snippets/StickyPager/import.css");
-/* show username and status simultaneously*/ /* @import url("https://raw.githubusercontent.com/KrstlSkll69/vc-snippets/main/OtherStuff/ViewBoth.css"); */
-/* collapsing member list */ @import url(https://raw.githubusercontent.com/amozeo/discord-css-snippets/refs/heads/main/snippets/compact-memberlist.css);
+/* show username and status simultaneously*/ /* @import url("https://raw.githubusercontent.com/KrstlSkll69/vc-snippets/main/OtherStuff/ViewBoth.css"); 
+/* collapsing member list */ /* @import url(https://raw.githubusercontent.com/amozeo/discord-css-snippets/refs/heads/main/snippets/compact-memberlist.css);
 /* server list revert */ @import url("https://scattagain.github.io/VencordStuff/css/GuildbarRevert.css");
 
 /* personal */
@@ -2899,13 +2899,56 @@ time[datetime]:hover::after {
   height: 16px;
 }
 
-/* ----- collapsing member list (plan to rewrite from the @import)----- */
-/* server list revert @import nameplate padding fix */
-._37e49614b9f110a9-container {
-  padding: calc(16px - 8px + 4px);
+/* ----- collapsing member list (plan to rewrite inspired by the @import)----- */
+/* wip with potential */
+/* .c8ffbb79449f399c-membersWrap .c8ffbb79449f399c-members  {
+    width: 27%;
+    transition: 0.5s ease-out;
+    margin-right: 67px;
+    right: 0;
+    position: absolute;
 }
-/* server list revert @import modifications */ 
+.c8ffbb79449f399c-membersWrap .c8ffbb79449f399c-members:hover {
+    width: var(--custom-member-list-width);
+}
+.c8ffbb79449f399c-membersWrap {
+    background: var(--background-gradient-chat,var(--custom-channel-members-bg));
+    background-color: red;
+    min-width: 100px;
+    position: absolute;
+    right: 0;
+} */
+
+/* original */
+.c8ffbb79449f399c-container .c8ffbb79449f399c-membersWrap .c8ffbb79449f399c-members:hover {
+  translate: -90px 0px;
+  padding-bottom: 3000px; 
+}
+.c8ffbb79449f399c-membersWrap .c8ffbb79449f399c-members {
+  max-width: 65px;
+  min-width: 65px;
+  transition: 500ms;
+  transition-delay: 500ms;
+}
+.c8ffbb79449f399c-membersWrap .c8ffbb79449f399c-members:hover {
+  max-width: 240px;
+  min-width: 240px;
+  transition: 500ms;
+}
 .c8ffbb79449f399c-container {
+  min-width: unset !important;
+  max-width: 65px;
+}
+.c8ffbb79449f399c-membersWrap {
+  min-width: unset !important;
+  max-width: 65px;
+}
+ /* .c8ffbb79449f399c-container .c8ffbb79449f399c-membersWrap .c8ffbb79449f399c-members.d125d22cdfd32cfe-thin:hover {
+  translate: -170px 0px;
+}  */
+
+/* server list revert @import modifications */ 
+/* .c8ffbb79449f399c-container {
   border: none;
 }
 .f75fb00fb7356cbe-content > :is(.c8ffbb79449f399c-container, .c8ffbb79449f399c-membersWrap) > * {
@@ -2920,8 +2963,11 @@ h2.c8ffbb79449f399c-membersGroup:not(:has(span))::before {
 .f75fb00fb7356cbe-content > :is(.c8ffbb79449f399c-container, .c8ffbb79449f399c-membersWrap) > :not(:hover) .c8ffbb79449f399c-membersGroup > [aria-hidden="true"]:has(> [style]) > [style],
 .f75fb00fb7356cbe-content > :is(.c8ffbb79449f399c-container, .c8ffbb79449f399c-membersWrap) > :not(:hover) h2.c8ffbb79449f399c-membersGroup:not(:has(span)) {
   margin-left: 0px;
-}
-
+} */
+/* server list revert @import nameplate padding fix */
+/* ._37e49614b9f110a9-container {
+  padding: calc(16px - 8px + 4px);
+} */
 /**
  * @name Floaty discord :3
  * @author original snippet by ukrio, redone by me!!
@@ -2980,7 +3026,7 @@ h2.c8ffbb79449f399c-membersGroup:not(:has(span))::before {
 
 /* TabCord */ /*@import url("https://ukrioo.github.io/cssCord/Other/TabCord.css");*/
 /* the part of the tabcord snippet i want */
-[class*="content"]:not(:is(._57f777e233da01ff-content, ._2f4f7eb58b61c328-content, ._99f8cc7ad4790ce9-content, ._07f9193042954787-content, #gif-picker-tab-panel .fed6d32841cc2da2-content)) {margin-right: 4px;}
+[class*="content"]:not(:is(._57f777e233da01ff-content, ._2f4f7eb58b61c328-content, ._99f8cc7ad4790ce9-content, ._07f9193042954787-content, #gif-picker-tab-panel .fed6d32841cc2da2-content, .f75fb00fb7356cbe-content)) {margin-right: 4px;}
 [class*="typing"] {bottom: -8px;}
 [class*="banner"] {border-radius: 16px 16px 0 0;}
 [class*="mentioned"] {border-radius: 0 16px 16px 0;}
