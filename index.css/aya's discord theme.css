@@ -6,8 +6,9 @@
 /* sticker search page selector */ @import url("https://raw.githubusercontent.com/yiruzu/vencord-snippets/refs/heads/main/snippets/StickyPager/import.css");
 /* show username and status simultaneously*/ /* @import url("https://raw.githubusercontent.com/KrstlSkll69/vc-snippets/main/OtherStuff/ViewBoth.css"); */
 /* collapsing member list */ @import url(https://raw.githubusercontent.com/amozeo/discord-css-snippets/refs/heads/main/snippets/compact-memberlist.css);
+/* server list revert */ @import url("https://scattagain.github.io/VencordStuff/css/GuildbarRevert.css");
 
-/* personal */ 
+/* personal */
 /* base theme */
 /* fixes */
 /* icons */
@@ -601,6 +602,10 @@
 [class*="micButtonParent"] [aria-label*="Options"] {
   display: none;
 }
+/* temporary² mute/deafen button centering fix */
+[class*="micButtonParent"] svg {
+  transform: translateX( 2px ) !important;
+}
 /* alternative */
 /* div[class*=micButtonParent] {
   button[role="switch"] {
@@ -611,7 +616,6 @@
     }
   }
 } */
-
 
 /* sidebar */
 /* search --custom-app-panels-height */
@@ -715,16 +719,6 @@ nav._5e434347c823b592-guilds  {
 }
 .theme-light ._48112cbe77dc5022-folderPreviewWrapper {
   filter: brightness(0.5) saturate(3);
-}
-
-/* ----- some vencord changes ----- */ /* plugin specific */
-/* recolor the friend count fr */
-#vc-friendcount {
-  color: #5865F2 !important;
-  margin-top: 10px;
-}
-[style="margin-bottom: 4px;"]:has(#vc-friendcount) { /* check back */ 
-  margin-bottom: -4px !important;
 }
 
 /* kitty vencord and inbox button */
@@ -1393,23 +1387,9 @@ div[data-selenium-video-tile="539862975163531265"] [class*=voiceChannelEffectsCo
 
 /* colored role pills */ /* to do */
 
-/* larger server list icons */ /* check back */
-[class*="closedFolderIconWrapper"] > [class*="guildIcon"],
-[data-list-item-id*="guildsnav"] > [class*="icon"]:not(._0ccaee68b77c7469-icon) {
-  border-radius: 50% !important;
-}
-[class*="listItem"] > div:has(div > div > svg):not(._48112cbe77dc5022-folderHeader, ._918165dab2b1e10b-listItemWrapper) {
-  transform: scale(1.17);
-  padding: 3px 0px;
-}
-.dbd2630aec71879b-stack {
-  height: auto !important;
-}
-[class*="listItemWrapper"] > div:has(svg):not(._1f388bcaa446c0c8-tutorialContainer [class*="listItemWrapper"] > div:has(svg)) {
-  transform: scale(1.17);
-}
-div[class*="listItem"]:has(._5bc7ed9d4097f6b5-circleIconButton) {
-  padding: 1.5px 0px !important;
+/* friend count */
+#vc-friendcount {
+  color: #5865F2 !important;
 }
 
 /* bring back og timestamps */
@@ -2920,7 +2900,11 @@ time[datetime]:hover::after {
 }
 
 /* ----- collapsing member list (plan to rewrite from the @import)----- */
-/* @import modifications */ 
+/* server list revert @import nameplate padding fix */
+._37e49614b9f110a9-container {
+  padding: calc(16px - 8px + 4px);
+}
+/* server list revert @import modifications */ 
 .c8ffbb79449f399c-container {
   border: none;
 }
