@@ -287,7 +287,8 @@
 /* vc users */
 ._07f9193042954787-content {
   background-color: var(--connected-user) !important;
-  width: calc(var(--custom-guild-sidebar-width) - var(--custom-guild-list-width) - 65px) !important;  border-radius: 12px;
+  width: calc(var(--custom-guild-sidebar-width) - var(--custom-guild-list-width) - 50px) !important;
+  border-radius: 12px;
   transition: scale .5s ease;
   transition-delay: .2s;
 }
@@ -547,6 +548,11 @@
   background-color: transparent !important;
 }
 
+/* temporary Move the avatar back to the right a bit */
+._37e49614b9f110a9-avatarWrapper ._37e49614b9f110a9-avatar{
+  margin-left: 8px;
+}
+
 /* vc panel redesign */
 .e131a99484292a19-container {
   height: auto;
@@ -574,7 +580,6 @@
 ._06d6249a1f2584ac-labelWrapper ._4bd5201c86a2042b-lineClamp1 span {
   margin-right: 10px;
 }
-
 
 /* spotify panels */
 ._37e49614b9f110a9-container, .e0cf275d59896c00-listeningAlong, #vc-spotify-player, ._5e434347c823b592-activityPanel, .e131a99484292a19-container {
@@ -824,117 +829,186 @@ button._67645e1530f1195d-button:not([aria-label="Disconnect"], [aria-label="Nois
 
 /* user specific stuff v2 */ /* personal */
 /* me */
-[aria-label="astro_aya, Online"] svg [fill="#43a25a"]:not( ._37e49614b9f110a9-container [aria-label="astro_aya, Online"] svg [fill="#43a25a"] ), [aria-label="astro_aya, Online via mobile"] svg [fill="#43a25a"]:not( ._37e49614b9f110a9-container [aria-label="astro_aya, Online via mobile"] svg [fill="#43a25a"] ), [aria-label="astro_aya, Idle"] svg [fill="#ca9654"]:not( ._37e49614b9f110a9-container [aria-label="astro_aya, Idle"] svg [fill="#ca9654"] ), [aria-label="astro_aya, Do Not Disturb"] svg [fill="#d83a42"]:not( ._37e49614b9f110a9-container [aria-label="astro_aya, Do Not Disturb"] svg [fill="#d83a42"] ), [aria-label="astro_aya, Offline"] svg [fill="#82838b"]:not( ._37e49614b9f110a9-container [aria-label="astro_aya, Offline"] svg [fill="#82838b"] ), [aria-label="astro_aya, Invisible"] svg [fill="#82838b"]:not( ._37e49614b9f110a9-container [aria-label="astro_aya, Streaming"] svg [fill="#82838b"] ), [aria-label="astro_aya"] .vc-platform-indicator svg, [data-author-id="539862975163531265"] .vc-platform-indicator svg, [href="/channels/@me/946925712810606703"] .vc-platform-indicator svg {
+[aria-label="astro_aya, Online"] svg [fill="#43a25a"]:not( ._37e49614b9f110a9-container [aria-label="astro_aya, Online"] svg [fill="#43a25a"] ), [aria-label="astro_aya, Online via mobile"] svg [fill="#43a25a"]:not( ._37e49614b9f110a9-container [aria-label="astro_aya, Online via mobile"] svg [fill="#43a25a"] ), [aria-label="astro_aya, Idle"] svg [fill="#ca9654"]:not( ._37e49614b9f110a9-container [aria-label="astro_aya, Idle"] svg [fill="#ca9654"] ), [aria-label="astro_aya, Do Not Disturb"] svg [fill="#d83a42"]:not( ._37e49614b9f110a9-container [aria-label="astro_aya, Do Not Disturb"] svg [fill="#d83a42"] ), [aria-label="astro_aya, Offline"] svg [fill="#82838b"]:not( ._37e49614b9f110a9-container [aria-label="astro_aya, Offline"] svg [fill="#82838b"] ), [aria-label="astro_aya, Invisible"] svg [fill="#82838b"]:not( ._37e49614b9f110a9-container [aria-label="astro_aya, Streaming"] svg [fill="#82838b"] ) {
   fill: #5865F2;
-} 
-[aria-label="anonymous_ninja, Online"] svg [fill="#43a25a"]:not( ._37e49614b9f110a9-container [aria-label="anonymous_ninja, Online"] svg [fill="#43a25a"] ), [aria-label="anonymous_ninja, Online via mobile"] svg [fill="#43a25a"]:not( ._37e49614b9f110a9-container [aria-label="anonymous_ninja, Online via mobile"] svg [fill="#43a25a"] ), [aria-label="anonymous_ninja, Idle"] svg [fill="#ca9654"]:not( ._37e49614b9f110a9-container [aria-label="anonymous_ninja, Idle"] svg [fill="#ca9654"] ), [aria-label="anonymous_ninja, Do Not Disturb"] svg [fill="#d83a42"]:not( ._37e49614b9f110a9-container [aria-label="anonymous_ninja, Do Not Disturb"] svg [fill="#d83a42"] ), [aria-label="anonymous_ninja, Offline"] svg [fill="#82838b"]:not( ._37e49614b9f110a9-container [aria-label="anonymous_ninja, Offline"] svg [fill="#82838b"] ), [aria-label="anonymous_ninja, Invisible"] svg [fill="#82838b"]:not( ._37e49614b9f110a9-container [aria-label="anonymous_ninja, Streaming"] svg [fill="#82838b"] ), [aria-label="anonymous_ninja"] .vc-platform-indicator svg, [data-author-id="946923909771571231"] .vc-platform-indicator svg, [href="/channels/@me/946925712810606703"] .vc-platform-indicator svg {
+}
+[data-author-id="539862975163531265"] .vc-platform-indicator img, [href="/channels/@me/946925712810606703"] .vc-platform-indicator img {
+  filter: brightness(0) saturate(100%) invert(36%) sepia(34%) saturate(2976%) hue-rotate(217deg) brightness(98%) contrast(93%);
+}
+[aria-label="anonymous_ninja, Online"] svg [fill="#43a25a"]:not( ._37e49614b9f110a9-container [aria-label="anonymous_ninja, Online"] svg [fill="#43a25a"] ), [aria-label="anonymous_ninja, Online via mobile"] svg [fill="#43a25a"]:not( ._37e49614b9f110a9-container [aria-label="anonymous_ninja, Online via mobile"] svg [fill="#43a25a"] ), [aria-label="anonymous_ninja, Idle"] svg [fill="#ca9654"]:not( ._37e49614b9f110a9-container [aria-label="anonymous_ninja, Idle"] svg [fill="#ca9654"] ), [aria-label="anonymous_ninja, Do Not Disturb"] svg [fill="#d83a42"]:not( ._37e49614b9f110a9-container [aria-label="anonymous_ninja, Do Not Disturb"] svg [fill="#d83a42"] ), [aria-label="anonymous_ninja, Offline"] svg [fill="#82838b"]:not( ._37e49614b9f110a9-container [aria-label="anonymous_ninja, Offline"] svg [fill="#82838b"] ), [aria-label="anonymous_ninja, Invisible"] svg [fill="#82838b"]:not( ._37e49614b9f110a9-container [aria-label="anonymous_ninja, Streaming"] svg [fill="#82838b"] ) {
   fill: #d5d5d2;
-} 
+}
+[data-author-id="946923909771571231"] .vc-platform-indicator img, [href="/channels/@me/946925712810606703"] .vc-platform-indicator img {
+  filter: brightness(0) saturate(100%) invert(97%) sepia(0%) saturate(0%) hue-rotate(141deg) brightness(91%) contrast(88%);
+}
 
 /* noshi <3 */
-[aria-label="nosh_59213, Online"] svg [fill="#43a25a"], [aria-label="nosh_59213, Online via mobile"] svg [fill="#43a25a"], [aria-label="nosh_59213, Idle"] svg [fill="#ca9654"], [aria-label="nosh_59213, Do Not Disturb"] svg [fill="#d83a42"], [aria-label="nosh_59213, Offline"] svg [fill="#82838b"], [aria-label="nosh_59213, Invisible"] svg [fill="#82838b"], [aria-label="nosh_59213, Streaming"] svg [fill="#9147ff"], [aria-label="nosh_59213"] .vc-platform-indicator svg, [data-author-id="1253887768665395423"] .vc-platform-indicator svg, [href="/channels/@me/1253901455241511033"] .vc-platform-indicator svg {
+[aria-label="nosh_59213, Online"] svg [fill="#43a25a"], [aria-label="nosh_59213, Online via mobile"] svg [fill="#43a25a"], [aria-label="nosh_59213, Idle"] svg [fill="#ca9654"], [aria-label="nosh_59213, Do Not Disturb"] svg [fill="#d83a42"], [aria-label="nosh_59213, Offline"] svg [fill="#82838b"], [aria-label="nosh_59213, Invisible"] svg [fill="#82838b"], [aria-label="nosh_59213, Streaming"] svg [fill="#9147ff"] {
   fill: #FFC0CB;
+}
+[data-author-id="1253887768665395423"] .vc-platform-indicator img, [href="/channels/@me/1253901455241511033"] .vc-platform-indicator img {
+  filter: brightness(0) saturate(100%) invert(81%) sepia(4%) saturate(2373%) hue-rotate(302deg) brightness(100%) contrast(103%);
 }
 
 /* dan! */
-[aria-label="thespacedan, Online"] svg [fill="#43a25a"], [aria-label="thespacedan, Online via mobile"] svg [fill="#43a25a"], [aria-label="thespacedan, Idle"] svg [fill="#ca9654"], [aria-label="thespacedan, Do Not Disturb"] svg [fill="#d83a42"], [aria-label="thespacedan, Offline"] svg [fill="#82838b"], [aria-label="thespacedan, Invisible"] svg [fill="#82838b"], [aria-label="thespacedan, Streaming"] svg [fill="#9147ff"], [aria-label="thespacedan"] .vc-platform-indicator svg, [data-author-id="313315260553494539"] .vc-platform-indicator svg, [href="/channels/@me/840730245425266699"] .vc-platform-indicator svg {
+[aria-label="thespacedan, Online"] svg [fill="#43a25a"], [aria-label="thespacedan, Online via mobile"] svg [fill="#43a25a"], [aria-label="thespacedan, Idle"] svg [fill="#ca9654"], [aria-label="thespacedan, Do Not Disturb"] svg [fill="#d83a42"], [aria-label="thespacedan, Offline"] svg [fill="#82838b"], [aria-label="thespacedan, Invisible"] svg [fill="#82838b"], [aria-label="thespacedan, Streaming"] svg [fill="#9147ff"] {
   fill: #cdaafa;
+}
+[data-author-id="313315260553494539"] .vc-platform-indicator img, [href="/channels/@me/840730245425266699"] .vc-platform-indicator imG {
+  filter: brightness(0) saturate(100%) invert(71%) sepia(62%) saturate(878%) hue-rotate(201deg) brightness(101%) contrast(96%);
 }
 
 /* koi! */
-[aria-label="koisuni, Online"] svg [fill="#43a25a"], [aria-label="koisuni, Online via mobile"] svg [fill="#43a25a"], [aria-label="koisuni, Idle"] svg [fill="#ca9654"], [aria-label="koisuni, Do Not Disturb"] svg [fill="#d83a42"], [aria-label="koisuni, Offline"] svg [fill="#82838b"], [aria-label="koisuni, Invisible"] svg [fill="#82838b"], [aria-label="koisuni, Streaming"] svg [fill="#9147ff"], [aria-label="koisuni"] .vc-platform-indicator svg, [data-author-id="191894081985708033"] .vc-platform-indicator svg, [href="/channels/@me/786977249273970730"] .vc-platform-indicator svg {
+[aria-label="koisuni, Online"] svg [fill="#43a25a"], [aria-label="koisuni, Online via mobile"] svg [fill="#43a25a"], [aria-label="koisuni, Idle"] svg [fill="#ca9654"], [aria-label="koisuni, Do Not Disturb"] svg [fill="#d83a42"], [aria-label="koisuni, Offline"] svg [fill="#82838b"], [aria-label="koisuni, Invisible"] svg [fill="#82838b"], [aria-label="koisuni, Streaming"] svg [fill="#9147ff"] {
   fill: #6c0023;
+}
+[data-author-id="191894081985708033"] .vc-platform-indicator img, [href="/channels/@me/786977249273970730"] .vc-platform-indicator img {
+  filter: brightness(0) saturate(100%) invert(5%) sepia(97%) saturate(5371%) hue-rotate(323deg) brightness(102%) contrast(129%);
 }
 
 /* koi alt */
-[aria-label="koitwoni, Online"] svg [fill="#43a25a"], [aria-label="koitwoni, Online via mobile"] svg [fill="#43a25a"], [aria-label="koitwoni, Idle"] svg [fill="#ca9654"], [aria-label="koitwoni, Do Not Disturb"] svg [fill="#d83a42"], [aria-label="koitwoni, Offline"] svg [fill="#82838b"], [aria-label="koitwoni, Invisible"] svg [fill="#82838b"], [aria-label="koitwoni, Streaming"] svg [fill="#9147ff"], [aria-label="koitwoni"] .vc-platform-indicator svg, [data-author-id="816143936832798721"] .vc-platform-indicator svg, [href="/channels/@me/816314670176534538"] .vc-platform-indicator svg {
+[aria-label="koitwoni, Online"] svg [fill="#43a25a"], [aria-label="koitwoni, Online via mobile"] svg [fill="#43a25a"], [aria-label="koitwoni, Idle"] svg [fill="#ca9654"], [aria-label="koitwoni, Do Not Disturb"] svg [fill="#d83a42"], [aria-label="koitwoni, Offline"] svg [fill="#82838b"], [aria-label="koitwoni, Invisible"] svg [fill="#82838b"], [aria-label="koitwoni, Streaming"] svg [fill="#9147ff"] {
   fill: #6c0023;
+}
+[data-author-id="816143936832798721"] .vc-platform-indicator img, [href="/channels/@me/816314670176534538"] .vc-platform-indicator img {
+  filter: brightness(0) saturate(100%) invert(5%) sepia(97%) saturate(5371%) hue-rotate(323deg) brightness(102%) contrast(129%);
 }
 
 /* andy! */
-[aria-label="andourys, Online"] svg [fill="#43a25a"], [aria-label="andourys, Online via mobile"] svg [fill="#43a25a"], [aria-label="andourys, Idle"] svg [fill="#ca9654"], [aria-label="andourys, Do Not Disturb"] svg [fill="#d83a42"], [aria-label="andourys, Offline"] svg [fill="#82838b"], [aria-label="andourys, Invisible"] svg [fill="#82838b"], [aria-label="andourys, Streaming"] svg [fill="#9147ff"], [aria-label="andourys"] .vc-platform-indicator svg, [data-author-id="1047432335357902921"] .vc-platform-indicator svg, [href="/channels/@me/1137440358385594450"] .vc-platform-indicator svg {
+[aria-label="andourys, Online"] svg [fill="#43a25a"], [aria-label="andourys, Online via mobile"] svg [fill="#43a25a"], [aria-label="andourys, Idle"] svg [fill="#ca9654"], [aria-label="andourys, Do Not Disturb"] svg [fill="#d83a42"], [aria-label="andourys, Offline"] svg [fill="#82838b"], [aria-label="andourys, Invisible"] svg [fill="#82838b"], [aria-label="andourys, Streaming"] svg [fill="#9147ff"] {
   fill: #52b9f8;
+}
+[data-author-id="1047432335357902921"] .vc-platform-indicator img, [href="/channels/@me/1137440358385594450"] .vc-platform-indicator img {
+  filter: brightness(0) saturate(100%) invert(61%) sepia(80%) saturate(693%) hue-rotate(174deg) brightness(99%) contrast(97%);
 }
 
 /* austin! */
-[aria-label="bogadile, Online"] svg [fill="#43a25a"], [aria-label="bogadile, Online via mobile"] svg [fill="#43a25a"], [aria-label="bogadile, Idle"] svg [fill="#ca9654"], [aria-label="bogadile, Do Not Disturb"] svg [fill="#d83a42"], [aria-label="bogadile, Offline"] svg [fill="#82838b"], [aria-label="bogadile, Invisible"] svg [fill="#82838b"], [aria-label="bogadile, Streaming"] svg [fill="#9147ff"], [aria-label="bogadile"] .vc-platform-indicator svg, [data-author-id="402964223283560448"] .vc-platform-indicator svg, [href="/channels/@me/1126589568066539521"] .vc-platform-indicator svg {
+[aria-label="bogadile, Online"] svg [fill="#43a25a"], [aria-label="bogadile, Online via mobile"] svg [fill="#43a25a"], [aria-label="bogadile, Idle"] svg [fill="#ca9654"], [aria-label="bogadile, Do Not Disturb"] svg [fill="#d83a42"], [aria-label="bogadile, Offline"] svg [fill="#82838b"], [aria-label="bogadile, Invisible"] svg [fill="#82838b"], [aria-label="bogadile, Streaming"] svg [fill="#9147ff"] {
   fill: #f46906;
+}
+[data-author-id="402964223283560448"] .vc-platform-indicator img, [href="/channels/@me/1126589568066539521"] .vc-platform-indicator img {
+  filter: brightness(0) saturate(100%) invert(57%) sepia(91%) saturate(3555%) hue-rotate(355deg) brightness(94%) contrast(104%);
 }
 
 /* ani! */
-[aria-label="andrri, Online"] svg [fill="#43a25a"], [aria-label="andrri, Online via mobile"] svg [fill="#43a25a"], [aria-label="andrri, Idle"] svg [fill="#ca9654"], [aria-label="andrri, Do Not Disturb"] svg [fill="#d83a42"], [aria-label="andrri, Offline"] svg [fill="#82838b"], [aria-label="andrri, Invisible"] svg [fill="#82838b"], [aria-label="andrri, Streaming"] svg [fill="#9147ff"], [aria-label="andrri"] .vc-platform-indicator svg, [data-author-id="980411565041913867"] .vc-platform-indicator svg, [href="/channels/@me/1141854914579013662"] .vc-platform-indicator svg {
+[aria-label="andrri, Online"] svg [fill="#43a25a"], [aria-label="andrri, Online via mobile"] svg [fill="#43a25a"], [aria-label="andrri, Idle"] svg [fill="#ca9654"], [aria-label="andrri, Do Not Disturb"] svg [fill="#d83a42"], [aria-label="andrri, Offline"] svg [fill="#82838b"], [aria-label="andrri, Invisible"] svg [fill="#82838b"], [aria-label="andrri, Streaming"] svg [fill="#9147ff"] {
   fill: #eebbf1;
+}
+[data-author-id="980411565041913867"] .vc-platform-indicator img, [href="/channels/@me/1141854914579013662"] .vc-platform-indicator img {
+  filter: brightness(0) saturate(100%) invert(90%) sepia(86%) saturate(5784%) hue-rotate(201deg) brightness(100%) contrast(89%);
 }
 
 /* lumi! */
-[aria-label="_.lumos._, Online"] svg [fill="#43a25a"], [aria-label="_.lumos._, Online via mobile"] svg [fill="#43a25a"], [aria-label="_.lumos._, Idle"] svg [fill="#ca9654"], [aria-label="_.lumos._, Do Not Disturb"] svg [fill="#d83a42"], [aria-label="_.lumos._, Offline"] svg [fill="#82838b"], [aria-label="_.lumos._, Invisible"] svg [fill="#82838b"], [aria-label="_.lumos._, Streaming"] svg [fill="#9147ff"], [aria-label="_.lumos."] .vc-platform-indicator svg, [data-author-id="800997550504411167"] .vc-platform-indicator svg, [href="/channels/@me/816548946612191232"] .vc-platform-indicator svg {
+[aria-label="_.lumos._, Online"] svg [fill="#43a25a"], [aria-label="_.lumos._, Online via mobile"] svg [fill="#43a25a"], [aria-label="_.lumos._, Idle"] svg [fill="#ca9654"], [aria-label="_.lumos._, Do Not Disturb"] svg [fill="#d83a42"], [aria-label="_.lumos._, Offline"] svg [fill="#82838b"], [aria-label="_.lumos._, Invisible"] svg [fill="#82838b"], [aria-label="_.lumos._, Streaming"] svg [fill="#9147ff"] {
   fill: #523074;
+}
+[data-author-id="800997550504411167"] .vc-platform-indicator img, [href="/channels/@me/816548946612191232"] .vc-platform-indicator img {
+  filter: brightness(0) saturate(100%) invert(23%) sepia(21%) saturate(2446%) hue-rotate(234deg) brightness(86%) contrast(93%);
 }
 
 /* sri! */
-[aria-label="sruii, Online"] svg [fill="#43a25a"], [aria-label="sruii, Online via mobile"] svg [fill="#43a25a"], [aria-label="sruii, Idle"] svg [fill="#ca9654"], [aria-label="sruii, Do Not Disturb"] svg [fill="#d83a42"], [aria-label="sruii, Offline"] svg [fill="#82838b"], [aria-label="sruii, Invisible"] svg [fill="#82838b"], [aria-label="sruii, Streaming"] svg [fill="#9147ff"], [aria-label="sruii"] .vc-platform-indicator svg, [data-author-id="794413684914389033"] .vc-platform-indicator svg, [href="/channels/@me/819601190924713984"] .vc-platform-indicator svg {
+[aria-label="sruii, Online"] svg [fill="#43a25a"], [aria-label="sruii, Online via mobile"] svg [fill="#43a25a"], [aria-label="sruii, Idle"] svg [fill="#ca9654"], [aria-label="sruii, Do Not Disturb"] svg [fill="#d83a42"], [aria-label="sruii, Offline"] svg [fill="#82838b"], [aria-label="sruii, Invisible"] svg [fill="#82838b"], [aria-label="sruii, Streaming"] svg [fill="#9147ff"] {
   fill: #000;
+}
+[data-author-id="794413684914389033"] .vc-platform-indicator img, [href="/channels/@me/819601190924713984"] .vc-platform-indicator img {
+  filter: brightness(0) saturate(100%);
 }
 
 /* sia! */
-[aria-label="1siaah, Online"] svg [fill="#43a25a"], [aria-label="1siaah, Online via mobile"] svg [fill="#43a25a"], [aria-label="1siaah, Idle"] svg [fill="#ca9654"], [aria-label="1siaah, Do Not Disturb"] svg [fill="#d83a42"], [aria-label="1siaah, Offline"] svg [fill="#82838b"], [aria-label="1siaah, Invisible"] svg [fill="#82838b"], [aria-label="1siaah, Streaming"] svg [fill="#9147ff"], [aria-label="1siaah"] .vc-platform-indicator svg, [data-author-id="796003225345327105"] .vc-platform-indicator svg, [href="/channels/@me/878188855075946536"] .vc-platform-indicator svg {
+[aria-label="1siaah, Online"] svg [fill="#43a25a"], [aria-label="1siaah, Online via mobile"] svg [fill="#43a25a"], [aria-label="1siaah, Idle"] svg [fill="#ca9654"], [aria-label="1siaah, Do Not Disturb"] svg [fill="#d83a42"], [aria-label="1siaah, Offline"] svg [fill="#82838b"], [aria-label="1siaah, Invisible"] svg [fill="#82838b"], [aria-label="1siaah, Streaming"] svg [fill="#9147ff"] {
   fill: #ff4e5b;
+}
+[data-author-id="796003225345327105"] .vc-platform-indicator img, [href="/channels/@me/878188855075946536"] .vc-platform-indicator img {
+  filter: brightness(0) saturate(100%) invert(59%) sepia(56%) saturate(6311%) hue-rotate(326deg) brightness(104%) contrast(118%);
 }
 
 /* vox! */
-[aria-label="teenageanesthesia, Online"] svg [fill="#43a25a"], [aria-label="teenageanesthesia, Online via mobile"] svg [fill="#43a25a"], [aria-label="teenageanesthesia, Idle"] svg [fill="#ca9654"], [aria-label="teenageanesthesia, Do Not Disturb"] svg [fill="#d83a42"], [aria-label="teenageanesthesia, Offline"] svg [fill="#82838b"], [aria-label="teenageanesthesia, Invisible"] svg [fill="#82838b"], [aria-label="teenageanesthesia, Streaming"] svg [fill="#9147ff"], [aria-label="teenageanesthesia"] .vc-platform-indicator svg, [data-author-id="594236124042493986"] .vc-platform-indicator svg, [href="/channels/@me/840827809395507210"] .vc-platform-indicator svg {
+[aria-label="teenageanesthesia, Online"] svg [fill="#43a25a"], [aria-label="teenageanesthesia, Online via mobile"] svg [fill="#43a25a"], [aria-label="teenageanesthesia, Idle"] svg [fill="#ca9654"], [aria-label="teenageanesthesia, Do Not Disturb"] svg [fill="#d83a42"], [aria-label="teenageanesthesia, Offline"] svg [fill="#82838b"], [aria-label="teenageanesthesia, Invisible"] svg [fill="#82838b"], [aria-label="teenageanesthesia, Streaming"] svg [fill="#9147ff"] {
   fill: #ff0088;
+}
+[data-author-id="594236124042493986"] .vc-platform-indicator img, [href="/channels/@me/840827809395507210"] .vc-platform-indicator img {
+  filter: brightness(0) saturate(100%) invert(16%) sepia(100%) saturate(4745%) hue-rotate(319deg) brightness(99%) contrast(111%);
 }
 
 /* vee! */
-[aria-label="emveeon, Online"] svg [fill="#43a25a"], [aria-label="emveeon, Online via mobile"] svg [fill="#43a25a"], [aria-label="emveeon, Idle"] svg [fill="#ca9654"], [aria-label="emveeon, Do Not Disturb"] svg [fill="#d83a42"], [aria-label="emveeon, Offline"] svg [fill="#82838b"], [aria-label="emveeon, Invisible"] svg [fill="#82838b"], [aria-label="emveeon, Streaming"] svg [fill="#9147ff"], [aria-label="emveeon"] .vc-platform-indicator svg, [data-author-id="477864409746767899"] .vc-platform-indicator svg, [href="/channels/@me/823720466848940072"] .vc-platform-indicator svg {
+[aria-label="emveeon, Online"] svg [fill="#43a25a"], [aria-label="emveeon, Online via mobile"] svg [fill="#43a25a"], [aria-label="emveeon, Idle"] svg [fill="#ca9654"], [aria-label="emveeon, Do Not Disturb"] svg [fill="#d83a42"], [aria-label="emveeon, Offline"] svg [fill="#82838b"], [aria-label="emveeon, Invisible"] svg [fill="#82838b"], [aria-label="emveeon, Streaming"] svg [fill="#9147ff"] {
   fill: #ffd1dc;
+}
+[data-author-id="477864409746767899"] .vc-platform-indicator img, [href="/channels/@me/823720466848940072"] .vc-platform-indicator img {
+  filter: brightness(0) saturate(100%) invert(90%) sepia(5%) saturate(4417%) hue-rotate(209deg) brightness(102%) contrast(109%);
 }
 
 /* jan :( */
-[aria-label="deleted_user_5593d8ce62fa, Online"] svg [fill="#43a25a"], [aria-label="deleted_user_5593d8ce62fa, Online via mobile"] svg [fill="#43a25a"], [aria-label="deleted_user_5593d8ce62fa, Idle"] svg [fill="#ca9654"], [aria-label="deleted_user_5593d8ce62fa, Do Not Disturb"] svg [fill="#d83a42"], [aria-label="deleted_user_5593d8ce62fa, Offline"] svg [fill="#82838b"], [aria-label="deleted_user_5593d8ce62fa, Invisible"] svg [fill="#82838b"], [aria-label="deleted_user_5593d8ce62fa, Streaming"] svg [fill="#9147ff"], [aria-label="deleted_user_5593d8ce62fa"] .vc-platform-indicator svg, [data-author-id="1167638440293175307"] .vc-platform-indicator svg, [href="/channels/@me/1197424681142202379"] .vc-platform-indicator svg,
-[aria-label="nabijpg, Online"] svg [fill="#43a25a"], [aria-label="nabijpg, Online via mobile"] svg [fill="#43a25a"], [aria-label="nabijpg, Idle"] svg [fill="#ca9654"], [aria-label="nabijpg, Do Not Disturb"] svg [fill="#d83a42"], [aria-label="nabijpg, Offline"] svg [fill="#82838b"], [aria-label="nabijpg, Invisible"] svg [fill="#82838b"], [aria-label="nabijpg, Streaming"] svg [fill="#9147ff"], [aria-label="nabijpg"] .vc-platform-indicator svg, [data-author-id="1167638440293175307"] .vc-platform-indicator svg, [href="/channels/@me/1197424681142202379"] .vc-platform-indicator svg {
+[aria-label="deleted_user_5593d8ce62fa, Online"] svg [fill="#43a25a"], [aria-label="deleted_user_5593d8ce62fa, Online via mobile"] svg [fill="#43a25a"], [aria-label="deleted_user_5593d8ce62fa, Idle"] svg [fill="#ca9654"], [aria-label="deleted_user_5593d8ce62fa, Do Not Disturb"] svg [fill="#d83a42"], [aria-label="deleted_user_5593d8ce62fa, Offline"] svg [fill="#82838b"], [aria-label="deleted_user_5593d8ce62fa, Invisible"] svg [fill="#82838b"], [aria-label="deleted_user_5593d8ce62fa, Streaming"] svg [fill="#9147ff"]
+[aria-label="nabijpg, Online"] svg [fill="#43a25a"], [aria-label="nabijpg, Online via mobile"] svg [fill="#43a25a"], [aria-label="nabijpg, Idle"] svg [fill="#ca9654"], [aria-label="nabijpg, Do Not Disturb"] svg [fill="#d83a42"], [aria-label="nabijpg, Offline"] svg [fill="#82838b"], [aria-label="nabijpg, Invisible"] svg [fill="#82838b"], [aria-label="nabijpg, Streaming"] svg [fill="#9147ff"] {
   fill: #ead7c1;
+}
+[data-author-id="1167638440293175307"] .vc-platform-indicator img, [href="/channels/@me/1197424681142202379"] .vc-platform-indicator img {
+  filter: brightness(0) saturate(100%) invert(91%) sepia(26%) saturate(303%) hue-rotate(327deg) brightness(95%) contrast(92%);
 }
 
 /* maya! */
-[aria-label="paddy3029, Online"] svg [fill="#43a25a"], [aria-label="paddy3029, Online via mobile"] svg [fill="#43a25a"], [aria-label="paddy3029, Idle"] svg [fill="#ca9654"], [aria-label="paddy3029, Do Not Disturb"] svg [fill="#d83a42"], [aria-label="paddy3029, Offline"] svg [fill="#82838b"], [aria-label="paddy3029, Invisible"] svg [fill="#82838b"], [aria-label="paddy3029, Streaming"] svg [fill="#9147ff"], [aria-label="axofit"] .vc-platform-indicator svg, [data-author-id="721068543864602644"] .vc-platform-indicator svg, [href="/channels/@me/1227792076171907134"] .vc-platform-indicator svg {
+[aria-label="paddy3029, Online"] svg [fill="#43a25a"], [aria-label="paddy3029, Online via mobile"] svg [fill="#43a25a"], [aria-label="paddy3029, Idle"] svg [fill="#ca9654"], [aria-label="paddy3029, Do Not Disturb"] svg [fill="#d83a42"], [aria-label="paddy3029, Offline"] svg [fill="#82838b"], [aria-label="paddy3029, Invisible"] svg [fill="#82838b"], [aria-label="paddy3029, Streaming"] svg [fill="#9147ff"] {
   fill: #00ffd5;
+}
+[data-author-id="721068543864602644"] .vc-platform-indicator img, [href="/channels/@me/1227792076171907134"] .vc-platform-indicator img {
+  filter: brightness(0) saturate(100%) invert(95%) sepia(54%) saturate(3022%) hue-rotate(88deg) brightness(100%) contrast(103%);
 }
 
 /* lili! */
-[aria-label="divine5320, Online"] svg [fill="#43a25a"], [aria-label="divine5320, Online via mobile"] svg [fill="#43a25a"], [aria-label="divine5320, Idle"] svg [fill="#ca9654"], [aria-label="divine5320, Do Not Disturb"] svg [fill="#d83a42"], [aria-label="divine5320, Offline"] svg [fill="#82838b"], [aria-label="divine5320, Invisible"] svg [fill="#82838b"], [aria-label="divine5320, Streaming"] svg [fill="#9147ff"], [aria-label="divine5320"] .vc-platform-indicator svg, [data-author-id="405100462895792138"] .vc-platform-indicator svg, [href="/channels/@me/1207507416233807914"] .vc-platform-indicator svg {
+[aria-label="divine5320, Online"] svg [fill="#43a25a"], [aria-label="divine5320, Online via mobile"] svg [fill="#43a25a"], [aria-label="divine5320, Idle"] svg [fill="#ca9654"], [aria-label="divine5320, Do Not Disturb"] svg [fill="#d83a42"], [aria-label="divine5320, Offline"] svg [fill="#82838b"], [aria-label="divine5320, Invisible"] svg [fill="#82838b"], [aria-label="divine5320, Streaming"] svg [fill="#9147ff"] {
   fill: #bc86ec;
+}
+[data-author-id="405100462895792138"] .vc-platform-indicator img, [href="/channels/@me/1207507416233807914"] .vc-platform-indicator img {
+  filter: brightness(0) saturate(100%) invert(75%) sepia(28%) saturate(7318%) hue-rotate(219deg) brightness(100%) contrast(86%);
 }
 
 /* lexi! */
-[aria-label="ramvvne, Online"] svg [fill="#43a25a"], [aria-label="ramvvne, Online via mobile"] svg [fill="#43a25a"], [aria-label="ramvvne, Idle"] svg [fill="#ca9654"], [aria-label="ramvvne, Do Not Disturb"] svg [fill="#d83a42"], [aria-label="ramvvne, Offline"] svg [fill="#82838b"], [aria-label="ramvvne, Invisible"] svg [fill="#82838b"], [aria-label="ramvvne, Streaming"] svg [fill="#9147ff"], [aria-label="ramvvne"] .vc-platform-indicator svg, [data-author-id="863311261344727071"] .vc-platform-indicator svg, [href="/channels/@me/1377405278760341517"] .vc-platform-indicator svg {
+[aria-label="ramvvne, Online"] svg [fill="#43a25a"], [aria-label="ramvvne, Online via mobile"] svg [fill="#43a25a"], [aria-label="ramvvne, Idle"] svg [fill="#ca9654"], [aria-label="ramvvne, Do Not Disturb"] svg [fill="#d83a42"], [aria-label="ramvvne, Offline"] svg [fill="#82838b"], [aria-label="ramvvne, Invisible"] svg [fill="#82838b"], [aria-label="ramvvne, Streaming"] svg [fill="#9147ff"] {
   fill: #F8C8DC;
+}
+[data-author-id="863311261344727071"] .vc-platform-indicator img, [href="/channels/@me/1377405278760341517"] .vc-platform-indicator img {
+  filter: brightness(0) saturate(100%) invert(92%) sepia(53%) saturate(2395%) hue-rotate(286deg) brightness(113%) contrast(105%);
 }
 
 /* megan! */
-[aria-label="whosmeggy, Online"] svg [fill="#43a25a"], [aria-label="whosmeggy, Online via mobile"] svg [fill="#43a25a"], [aria-label="whosmeggy, Idle"] svg [fill="#ca9654"], [aria-label="whosmeggy, Do Not Disturb"] svg [fill="#d83a42"], [aria-label="whosmeggy, Offline"] svg [fill="#82838b"], [aria-label="whosmeggy, Invisible"] svg [fill="#82838b"], [aria-label="whosmeggy, Streaming"] svg [fill="#9147ff"], [aria-label="whosmeggy"] .vc-platform-indicator svg, [data-author-id="351580550055723019"] .vc-platform-indicator svg, [href="/channels/@me/1383627431625232466"] .vc-platform-indicator svg {
+[aria-label="whosmeggy, Online"] svg [fill="#43a25a"], [aria-label="whosmeggy, Online via mobile"] svg [fill="#43a25a"], [aria-label="whosmeggy, Idle"] svg [fill="#ca9654"], [aria-label="whosmeggy, Do Not Disturb"] svg [fill="#d83a42"], [aria-label="whosmeggy, Offline"] svg [fill="#82838b"], [aria-label="whosmeggy, Invisible"] svg [fill="#82838b"], [aria-label="whosmeggy, Streaming"] svg [fill="#9147ff"] {
   fill: #9a7acf;
+}
+[data-author-id="351580550055723019"] .vc-platform-indicator img, [href="/channels/@me/1383627431625232466"] .vc-platform-indicator img {
+  filter: brightness(0) saturate(100%) invert(55%) sepia(21%) saturate(1006%) hue-rotate(221deg) brightness(92%) contrast(88%);
 }
 
 /* var! */
-[aria-label="v4rr, Online"] svg [fill="#43a25a"], [aria-label="v4rr, Online via mobile"] svg [fill="#43a25a"], [aria-label="v4rr, Idle"] svg [fill="#ca9654"], [aria-label="v4rr, Do Not Disturb"] svg [fill="#d83a42"], [aria-label="v4rr, Offline"] svg [fill="#82838b"], [aria-label="v4rr, Invisible"] svg [fill="#82838b"], [aria-label="v4rr, Streaming"] svg [fill="#9147ff"], [aria-label="v4rr"] .vc-platform-indicator svg, [data-author-id="335088765095641098"] .vc-platform-indicator svg, [href="/channels/@me/1381511380212908062"] .vc-platform-indicator svg {
+[aria-label="v4rr, Online"] svg [fill="#43a25a"], [aria-label="v4rr, Online via mobile"] svg [fill="#43a25a"], [aria-label="v4rr, Idle"] svg [fill="#ca9654"], [aria-label="v4rr, Do Not Disturb"] svg [fill="#d83a42"], [aria-label="v4rr, Offline"] svg [fill="#82838b"], [aria-label="v4rr, Invisible"] svg [fill="#82838b"], [aria-label="v4rr, Streaming"] svg [fill="#9147ff"] {
   fill: #d11010;
+}
+[data-author-id="335088765095641098"] .vc-platform-indicator img, [href="/channels/@me/1381511380212908062"] .vc-platform-indicator img {
+  filter: brightness(0) saturate(100%) invert(13%) sepia(61%) saturate(5932%) hue-rotate(356deg) brightness(98%) contrast(97%);
 }
 
 /* kim */
-[aria-label="mouseql, Online"] svg [fill="#43a25a"], [aria-label="mouseql, Online via mobile"] svg [fill="#43a25a"], [aria-label="mouseql, Idle"] svg [fill="#ca9654"], [aria-label="mouseql, Do Not Disturb"] svg [fill="#d83a42"], [aria-label="mouseql, Offline"] svg [fill="#82838b"], [aria-label="mouseql, Invisible"] svg [fill="#82838b"], [aria-label="mouseql, Streaming"] svg [fill="#9147ff"], [aria-label="mouseql"] .vc-platform-indicator svg, [data-author-id="502224755089211403"] .vc-platform-indicator svg, [href="/channels/@me/788820110185857024"] .vc-platform-indicator svg {
+[aria-label="mouseql, Online"] svg [fill="#43a25a"], [aria-label="mouseql, Online via mobile"] svg [fill="#43a25a"], [aria-label="mouseql, Idle"] svg [fill="#ca9654"], [aria-label="mouseql, Do Not Disturb"] svg [fill="#d83a42"], [aria-label="mouseql, Offline"] svg [fill="#82838b"], [aria-label="mouseql, Invisible"] svg [fill="#82838b"], [aria-label="mouseql, Streaming"] svg [fill="#9147ff"] {
   fill: #d0cfc4;
+}
+[data-author-id="502224755089211403"] .vc-platform-indicator img, [href="/channels/@me/788820110185857024"] .vc-platform-indicator img {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(1%) saturate(5220%) hue-rotate(317deg) brightness(93%) contrast(73%);
 }
 
 /* melon */
-[aria-label="_melonlord., Online"] svg [fill="#43a25a"], [aria-label="_melonlord., Online via mobile"] svg [fill="#43a25a"], [aria-label="_melonlord., Idle"] svg [fill="#ca9654"], [aria-label="_melonlord., Do Not Disturb"] svg [fill="#d83a42"], [aria-label="_melonlord., Offline"] svg [fill="#82838b"], [aria-label="_melonlord., Invisible"] svg [fill="#82838b"], [aria-label="_melonlord., Streaming"] svg [fill="#9147ff"], [aria-label="_melonlord."] .vc-platform-indicator svg, [data-author-id="636530542875115531"] .vc-platform-indicator svg, [href="/channels/@me/887123108086022174"] .vc-platform-indicator svg {
+[aria-label="_melonlord., Online"] svg [fill="#43a25a"], [aria-label="_melonlord., Online via mobile"] svg [fill="#43a25a"], [aria-label="_melonlord., Idle"] svg [fill="#ca9654"], [aria-label="_melonlord., Do Not Disturb"] svg [fill="#d83a42"], [aria-label="_melonlord., Offline"] svg [fill="#82838b"], [aria-label="_melonlord., Invisible"] svg [fill="#82838b"], [aria-label="_melonlord., Streaming"] svg [fill="#9147ff"] {
   fill: #ED4245;
+}
+[data-author-id="636530542875115531"] .vc-platform-indicator img, [href="/channels/@me/887123108086022174"] .vc-platform-indicator img {
+  filter: brightness(0) saturate(100%) invert(47%) sepia(77%) saturate(6019%) hue-rotate(339deg) brightness(96%) contrast(92%);
 }
 
 /* mck */
-[aria-label="sleepingthroughholiday, Online"] svg [fill="#43a25a"], [aria-label="sleepingthroughholiday, Online via mobile"] svg [fill="#43a25a"], [aria-label="sleepingthroughholiday, Idle"] svg [fill="#ca9654"], [aria-label="sleepingthroughholiday, Do Not Disturb"] svg [fill="#d83a42"], [aria-label="sleepingthroughholiday, Offline"] svg [fill="#82838b"], [aria-label="sleepingthroughholiday, Invisible"] svg [fill="#82838b"], [aria-label="sleepingthroughholiday, Streaming"] svg [fill="#9147ff"], [aria-label="sleepingthroughholiday"] .vc-platform-indicator svg, [data-author-id="1141350925341053040"] .vc-platform-indicator svg, [href="/channels/@me/1141420714168164453"] .vc-platform-indicator svg {
+[aria-label="sleepingthroughholiday, Online"] svg [fill="#43a25a"], [aria-label="sleepingthroughholiday, Online via mobile"] svg [fill="#43a25a"], [aria-label="sleepingthroughholiday, Idle"] svg [fill="#ca9654"], [aria-label="sleepingthroughholiday, Do Not Disturb"] svg [fill="#d83a42"], [aria-label="sleepingthroughholiday, Offline"] svg [fill="#82838b"], [aria-label="sleepingthroughholiday, Invisible"] svg [fill="#82838b"], [aria-label="sleepingthroughholiday, Streaming"] svg [fill="#9147ff"] {
   fill: #bb0000;
+}
+[data-author-id="1141350925341053040"] .vc-platform-indicator img, [href="/channels/@me/1141420714168164453"] .vc-platform-indicator img {
+  filter: brightness(0) saturate(100%) invert(17%) sepia(43%) saturate(6088%) hue-rotate(352deg) brightness(86%) contrast(122%);
 }
 
 /* discord loading icon */
@@ -1020,7 +1094,6 @@ html:not(.app-focused) ._0f481cbbd7530492-newMessagesBar {
   background-color: #5865F2 !important;
   width: 21px;
   height: 16px;
-  right: 3px;
   position: relative;
   border-radius: 0px;
   /*color: #5865F2;*/ /* no text */
@@ -1332,10 +1405,6 @@ html:not(.app-focused) ._0f481cbbd7530492-newMessagesBar {
 }
 
 
-/* message buttons raised up a lil */ /* fixes */
-[id^=message-accessories] + [class*=buttonContainer] > [class*=buttons] {
-  top: -27px !important; 
-}
 
 /* Pin page switcher to bottom of search results */ /* base theme */
 [class*="searchResultsWrap"] [class*=container]:has([class*=pageControlContainer]){
@@ -1470,24 +1539,6 @@ time[datetime]:hover::after {
 /* chat height fix */
 ._36d072eab2b2e737-scrollerSpacer {
   height: 50px;
-}
-
-/* game invite popup position fix */ /* fixes */
-.b8880176888cc928-activityInviteEducation {
-  font: idk, placeholder;
-}
-
-/* Collapse Icon Position Fix */
-._29444ba32c7fbeab-containerDefault {
-  > div {
-    padding-left: 0.5em;
-
-    > div {
-      display: flex !important;
-      place-content: start !important;
-      flex-direction: row-reverse !important;
-    }
-  }
 }
 
 /* Fancy spotify controls */
@@ -2925,10 +2976,14 @@ time[datetime]:hover::after {
   padding-bottom: 3000px; 
 }
 .c8ffbb79449f399c-membersWrap .c8ffbb79449f399c-members {
+  border-left: 1.5px solid var(--border-subtle);
   max-width: 65px;
   min-width: 65px;
   transition: 500ms;
   transition-delay: 500ms;
+}
+.c8ffbb79449f399c-container {
+  border: none;
 }
 .c8ffbb79449f399c-membersWrap .c8ffbb79449f399c-members:hover {
   max-width: 240px;
@@ -2968,6 +3023,8 @@ h2.c8ffbb79449f399c-membersGroup:not(:has(span))::before {
 /* ._37e49614b9f110a9-container {
   padding: calc(16px - 8px + 4px);
 } */
+
+
 /**
  * @name Floaty discord :3
  * @author original snippet by ukrio, redone by me!!
@@ -3026,7 +3083,7 @@ h2.c8ffbb79449f399c-membersGroup:not(:has(span))::before {
 
 /* TabCord */ /*@import url("https://ukrioo.github.io/cssCord/Other/TabCord.css");*/
 /* the part of the tabcord snippet i want */
-[class*="content"]:not(:is(._57f777e233da01ff-content, ._2f4f7eb58b61c328-content, ._99f8cc7ad4790ce9-content, ._07f9193042954787-content, #gif-picker-tab-panel .fed6d32841cc2da2-content, .f75fb00fb7356cbe-content)) {margin-right: 4px;}
+[class*="content"]:not(:is(._57f777e233da01ff-content, ._2f4f7eb58b61c328-content, ._99f8cc7ad4790ce9-content, ._07f9193042954787-content, #gif-picker-tab-panel .fed6d32841cc2da2-content, .f75fb00fb7356cbe-content, .e131a99484292a19-buttonContents)) {margin-right: 4px;}
 [class*="typing"] {bottom: -8px;}
 [class*="banner"] {border-radius: 16px 16px 0 0;}
 [class*="mentioned"] {border-radius: 0 16px 16px 0;}
@@ -3036,9 +3093,9 @@ h2.c8ffbb79449f399c-membersGroup:not(:has(span))::before {
 [class*="profilePanel"], ._133bf5eea8e33a34-container {
   border-radius: 16px !important;
 }
-[class*="base"]:not(:is(._13533e3c5791980f-base, .numberBadge__40d6f, ._650eb104245d257b-iconBadge, .notice__5fd4c, ._2b1f52e43a8f1c02-base, .b8880176888cc928-typing.b8880176888cc928-base, .b8880176888cc928-activityInviteEducation.b8880176888cc928-base)) {
+/* [class*="base"]:not(:is(._13533e3c5791980f-base, .numberBadge__40d6f, ._650eb104245d257b-iconBadge, .notice__5fd4c, ._2b1f52e43a8f1c02-base, .b8880176888cc928-typing.b8880176888cc928-base, .b8880176888cc928-activityInviteEducation.b8880176888cc928-base)) {
   margin: 4px 0 !important;
-}
+} */
 .button_fb7f94.icon_fb7f94.banner_fb7f94 {
   border-radius: 15px;
 }
@@ -3089,7 +3146,7 @@ h2.c8ffbb79449f399c-membersGroup:not(:has(span))::before {
     scrollbar-width: auto !important;
     overflow-y: hidden !important;
     overflow-x: scroll !important;
-
+    background-color: red;
 }
 ._23e6b439306f125a-standardSidebarView::-webkit-scrollbar {
   display: none;
