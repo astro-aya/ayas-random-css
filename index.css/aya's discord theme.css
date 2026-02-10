@@ -528,28 +528,28 @@
   }
 }
 
-.container__37e49 .avatarWrapper__37e49 {
+.container__37e49 .accountPopoutButtonWrapper__37e49 {
   min-width: 0; 
   transition: ease-in-out 0.3s;
 }
-.container__37e49 .avatarWrapper__37e49:hover {
+.container__37e49 .accountPopoutButtonWrapper__37e49:hover {
   min-width: 105%; 
   transition: ease-in-out 0.3s;
 }
-.avatarWrapper__37e49 .nameTag__37e49 {
+.accountPopoutButtonWrapper__37e49 .nameTag__37e49 {
   opacity: 0;
   transition: ease-in-out 0.3s;
 }
-.avatarWrapper__37e49:hover .nameTag__37e49 {
+.accountPopoutButtonWrapper__37e49:hover .nameTag__37e49 {
   opacity: 100%;
   transition: ease-in-out 0.3s;
 }
-.avatarWrapper__37e49:hover {
+.accountPopoutButtonWrapper__37e49:hover {
   background-color: transparent !important;
 }
 
 /* temporary Move the avatar back to the right a bit */
-.avatarWrapper__37e49 .avatar__37e49{
+.accountPopoutButtonWrapper__37e49 .avatar__37e49{
   margin-left: 8px;
 }
 
