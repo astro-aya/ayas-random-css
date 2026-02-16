@@ -1020,20 +1020,20 @@ button.button__67645:not([aria-label="Disconnect"], [aria-label="Noise Suppressi
   fill: #c0378e;
 }
 
+/* galaxy! */
+[aria-label="kur0lita, Online"] svg [fill="#45a366"], [aria-label="kur0lita, Online via mobile"] svg [fill="#45a366"], [aria-label="kur0lita, Idle"] svg [fill="#ffc04e"], [aria-label="kur0lita, Do Not Disturb"] svg [fill="#da3e44"], [aria-label="kur0lita, Offline"] svg [fill="#84858d"], [aria-label="kur0lita, Invisible"] svg [fill="#84858d"], [aria-label="kur0lita, Streaming"] svg [fill="#9147ff"] {
+  fill: #646dc3;
+}
+[data-author-id="479398401176240153"] .vc-platform-indicator svg, [href="/channels/@me/1463749317755146336"] .vc-platform-indicator svg {
+  fill: #646dc3;
+}
+
 /* kim */
 [aria-label="mouseql, Online"] svg [fill="#45a366"], [aria-label="mouseql, Online via mobile"] svg [fill="#45a366"], [aria-label="mouseql, Idle"] svg [fill="#ffc04e"], [aria-label="mouseql, Do Not Disturb"] svg [fill="#da3e44"], [aria-label="mouseql, Offline"] svg [fill="#84858d"], [aria-label="mouseql, Invisible"] svg [fill="#84858d"], [aria-label="mouseql, Streaming"] svg [fill="#9147ff"] {
   fill: #d0cfc4;
 }
 [data-author-id="502224755089211403"] .vc-platform-indicator svg, [href="/channels/@me/788820110185857024"] .vc-platform-indicator svg {
   fill: #d0cfc4;
-}
-
-/* mck */
-[aria-label="sleepingthroughholiday, Online"] svg [fill="#45a366"], [aria-label="sleepingthroughholiday, Online via mobile"] svg [fill="#45a366"], [aria-label="sleepingthroughholiday, Idle"] svg [fill="#ffc04e"], [aria-label="sleepingthroughholiday, Do Not Disturb"] svg [fill="#da3e44"], [aria-label="sleepingthroughholiday, Offline"] svg [fill="#84858d"], [aria-label="sleepingthroughholiday, Invisible"] svg [fill="#84858d"], [aria-label="sleepingthroughholiday, Streaming"] svg [fill="#9147ff"] {
-  fill: #bb0000;
-}
-[data-author-id="1141350925341053040"] .vc-platform-indicator svg, [href="/channels/@me/1141420714168164453"] .vc-platform-indicator svg {
-  fill: #bb0000;
 }
 
 /* discord loading icon */
