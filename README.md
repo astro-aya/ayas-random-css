@@ -8,12 +8,12 @@ I'm still learning html and css but it's fun to mess around and customize anythi
 
 ### Active snippets
 * [My EXTREMELY unfinished wip Discord theme](https://astro-aya.github.io/ayas-random-css/index.css/aya's%20discord%20theme.css)
-  * ```css
+    ```css
     @import url("https://astro-aya.github.io/ayas-random-css/index.css/aya's%20discord%20theme.css");
     ```
 
 * [Pastel Discord status icons](https://astro-aya.github.io/ayas-random-css/index.css/pastel%20status%20colors.css)
-  * ```css
+    ```css
     @import url("https://astro-aya.github.io/ayas-random-css/index.css/pastel%20status%20colors.css");
     ```
 
