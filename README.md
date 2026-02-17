@@ -7,14 +7,14 @@ I'm still learning html and css but it's fun to mess around and customize anythi
 
 
 ### Active snippets
-* [My EXTREMELY unfinished wip Discord theme](https://astro-aya.github.io/ayas-random-css/index.css/aya's%20discord%20theme.css)
+* [My EXTREMELY unfinished wip Discord theme](https://github.com/astro-aya/ayas-random-css/tree/main/Themes/work%20in%20progress%20theme)
     ```css
-    @import url("https://astro-aya.github.io/ayas-random-css/index.css/aya's%20discord%20theme.css");
+    @import url("https://astro-aya.github.io/ayas-random-css/Themes/work in progress theme/aya's discord theme.css");
     ```
 
-* [Pastel Discord status icons](https://astro-aya.github.io/ayas-random-css/index.css/pastel%20status%20colors.css)
+* [Pastel Discord status icons](https://github.com/astro-aya/ayas-random-css/tree/main/Snippets/Pastel%20status%20colors)
     ```css
-    @import url("https://astro-aya.github.io/ayas-random-css/index.css/pastel%20status%20colors.css");
+    @import url("https://astro-aya.github.io/ayas-random-css/Snippets/Pastel status colors/pastel status colors.css");
     ```
 
-![Image of a Parabeetle from Super Mario games](https://github.com/user-attachments/assets/685049d1-1a20-473f-9ee8-750240b200ba)
+<!-- ![Image of a Parabeetle from Super Mario games](https://github.com/user-attachments/assets/685049d1-1a20-473f-9ee8-750240b200ba) -->
