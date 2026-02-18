@@ -1,3 +1,3 @@
-work in progress 
+This is basically all my QuickCSS and I'm procrastinating making a proper theme from the ground up so ignore this 
 
-![gato](https://github.com/user-attachments/assets/f8be9658-02ae-4ddf-a8ce-f139e6e8bbce)
+<img width="40" height="40" alt="leave" src="https://github.com/user-attachments/assets/6e02a143-cb8b-42b8-bf86-4fba1b5a0530" />
