@@ -604,11 +604,11 @@
 }
 
 /* temporary mute/deafen options dropdown button removal */
-[class*="micButtonParent"] [aria-label*="Options"] {
+[class*="audioButtonParent"] [aria-label*="Options"] {
   display: none;
 }
 /* temporary² mute/deafen button centering fix */
-[class*="micButtonParent"] svg {
+[class*="audioButtonParent"] svg {
   transform: translateX( 2px ) !important;
 }
 /* alternative */
@@ -997,7 +997,7 @@ button.button__67645:not([aria-label="Disconnect"], [aria-label="Noise Suppressi
 }
 
 /* afri! */
-[aria-label="im.afrii_, Online"] svg [fill="#43a25a"], [aria-label="im.afrii_, Online via mobile"] svg [fill="#43a25a"], [aria-label="im.afrii_, Idle"] svg [fill="#ca9654"], [aria-label="im.afrii_, Do Not Disturb"] svg [fill="#d83a42"], [aria-label="im.afrii_, Offline"] svg [fill="#82838b"], [aria-label="im.afrii_, Invisible"] svg [fill="#82838b"], [aria-label="im.afrii_, Streaming"] svg [fill="#9147ff"] {
+[aria-label="im.afrii_, Online"] svg [fill="#45a366"], [aria-label="im.afrii_, Online via mobile"] svg [fill="#45a366"], [aria-label="im.afrii_, Idle"] svg [fill="#ffc04e"], [aria-label="im.afrii_, Do Not Disturb"] svg [fill="#da3e44"], [aria-label="im.afrii_, Offline"] svg [fill="#84858d"], [aria-label="im.afrii_, Invisible"] svg [fill="#84858d"], [aria-label="im.afrii_, Streaming"] svg [fill="#9147ff"] {
   fill: #bff1ff;
 }
 [data-author-id="967884598975529030"] .vc-platform-indicator svg, [href="/channels/@me/1391079358562828351"] .vc-platform-indicator svg {
