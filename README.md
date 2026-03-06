@@ -6,10 +6,10 @@ I taught myself css because a lot of sites don't have dark mode, which made them
 I'm still learning html and css but it's fun to mess around and customize anything to your own heart's content! This repo is basically my way to track my progress in this side quest.
 
 
-### Active snippets
-* [My EXTREMELY unfinished wip Discord theme](https://github.com/astro-aya/ayas-random-css/tree/main/Themes/work%20in%20progress%20theme)
+### Active projects
+* [Islands Discord theme](https://github.com/astro-aya/ayas-random-css/tree/main/Themes/Islands)
     ```css
-    @import url("https://astro-aya.github.io/ayas-random-css/Themes/work in progress theme/aya's discord theme.css");
+    @import url("https://astro-aya.github.io/ayas-random-css/Themes/Islands/islands theme.css");
     ```
 
 * [Pastel Discord status icons](https://github.com/astro-aya/ayas-random-css/tree/main/Snippets/Pastel%20status%20colors)
