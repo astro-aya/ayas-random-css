@@ -1,4 +1,4 @@
-# Discord Islands theme
+# Islands Discord theme
 
 > [!WARNING]
 > Heavy work in progress, don't expect everything to be fully functional or polished.
