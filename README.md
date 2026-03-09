@@ -9,12 +9,12 @@ I'm still learning html and css but it's fun to mess around and customize anythi
 ### Active projects
 * [Islands Discord theme](https://github.com/astro-aya/ayas-random-css/tree/main/Themes/Islands)
     ```css
-    @import url("https://astro-aya.github.io/ayas-random-css/Themes/Islands/islands theme.css");
+    @import url("https://astro-aya.github.io/ayas-random-css/Themes/Islands/islands%20theme.css");
     ```
 
 * [Pastel Discord status icons](https://github.com/astro-aya/ayas-random-css/tree/main/Snippets/Pastel%20status%20colors)
     ```css
-    @import url("https://astro-aya.github.io/ayas-random-css/Snippets/Pastel status colors/pastel status colors.css");
+    @import url("https://astro-aya.github.io/ayas-random-css/Snippets/Pastel%20status%20colors/pastel%20status%20colors.css");
     ```
 
 <!-- ![Image of a Parabeetle from Super Mario games](https://github.com/user-attachments/assets/685049d1-1a20-473f-9ee8-750240b200ba) -->
