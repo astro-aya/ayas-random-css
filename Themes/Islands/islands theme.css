@@ -47,6 +47,7 @@ html {
 .page__5e434 {
   padding: var(--gap-weak);
   padding-top: 1px;
+  padding-right: 10px;
   margin-top: -1px;
 }
 .chat_f75fb0, .container__133bf {
@@ -57,6 +58,7 @@ html {
 /* sidebar */
 .sidebar__5e434 {
   padding:  var(--gap-weak);
+  padding-left: 2px;
 }
 .sidebarList__5e434 {
   border-radius: var(--border-radius-strong);
@@ -64,7 +66,7 @@ html {
   border: none;
   margin-left: 4px;
   margin-right: -4px;
-  margin-bottom: calc(var(--custom-app-panels-height, 0) + var(--space-xs) + 4px);
+  margin-bottom: calc(var(--custom-app-panels-height, 0) + var(--space-xs) + 5px);
 }
 .scroller__99e7c  {
   margin-bottom: 0;
@@ -115,15 +117,16 @@ html {
 }
 
 /* user/activity panels resizing */ 
-.visual-refresh section.panels__5e434 { 
-  margin-left: 8px;
+section.panels__5e434 { 
+  left: 10px;
+  margin-bottom: 1px;
   border-radius: var(--border-radius-strong);
   outline: 1px solid var(--border-subtle);
   width: calc(var(--custom-guild-sidebar-width) + 11px ) !important; 
   .actionButtons_e131a9 button { 
     padding: 0; 
   } 
-} 
+}
 .panels__5e434>div {
   border-radius: var(--border-radius-strong) var(--border-radius-strong) 0 0;
 }
@@ -213,13 +216,18 @@ html {
 /* friends list */
 .peopleListItem_cc6179 {
   border-radius: var(--border-radius-strong) !important;
-  border: 1px solid var(--border-subtle) !important; 
+  background-color: var(--background-base-low);
   margin-bottom: 8px !important;
   transition: all 0.2s ease !important;
   padding: 16px 10px;
   padding-inline-start: var(--space-8);
-  /* margin-inline: 20px 10px;
-  margin-inline-start: var(--space-16); */
+}
+/* friends list */
+.peopleListItem_cc6179:hover {
+  background-color: var(--background-surface-high);
+}
+.peopleListItem_cc6179 .actionButton_f8fa06 {
+  background-color: var(--background-base-lower);
 }
 
 
@@ -289,17 +297,26 @@ html {
   background-color: var(--background-secondary-color);
   border-radius: var(--border-radius-strong);
   outline: 1px solid var(--border-subtle);
+  transition: 0.5s ease;
 }
 .channelTextArea_f75fb0 {
   border-radius: var(--border-radius-strong);
 }
-
+.hasStackedBar__74017 {
+  border-radius: 0 0 var(--border-radius-strong) var(--border-radius-strong);
+  transition: 0s;
+}
 
 /* reply extension */
-
+.stackedBars__74017 {
+  background-color: var(--background-secondary-color);
+  border-radius: var(--border-radius-strong) var(--border-radius-strong) 0 0 !important;
+}
 
 
 /* context menus */
+
+
 
 
 
