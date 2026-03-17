@@ -1,6 +1,7 @@
 /* Account Details Grid - dablulite */ @import url(//dablulite.github.io/css-snippets/AccountDetailsGrid/import.css);
 /* chat bar button context menu - davart154 */ @import url(https://davart154.github.io/Themes/Snippets/Chat%20Bar%20Context%20Menu/ChatContextMenuSource.css); 
 /* collapsing member list - amozeo */ @import url(https://raw.githubusercontent.com/amozeo/discord-css-snippets/refs/heads/main/snippets/compact-memberlist.css);
+/* CompactTabs - Krammeth */ @import url('https://raw.githubusercontent.com/Krammeth/css-snippets/refs/heads/main/CompactTabs.css');
 
 
 /* Theme attributes */
@@ -8,7 +9,6 @@
   --background-primary-color: #323339;
   --background-secondary-color: #2c2d32;
   --background-tertiary-color: #25262a;
-  --background-border-color: #8080805c;
   --primary-accent-color: #5865F2;
   --window-tint: #0005;
   --border-radius-strong: 16px;
@@ -17,6 +17,12 @@
   --gap-strong: 16px;
   --gap-medium: 12px;
   --gap-weak: 8px;
+}
+
+/* CompactTabs settings */
+:root {
+  --server-tabs: true;
+  --dms-tabs: true;
 }
 
 
@@ -45,7 +51,7 @@ html {
 }
 .chat_f75fb0, .container__133bf {
   border-radius: var(--border-radius-strong);
-  outline: 1px solid var(--background-border-color);
+  outline: 1px solid var(--border-subtle);
 }
 
 /* sidebar */
@@ -54,7 +60,7 @@ html {
 }
 .sidebarList__5e434 {
   border-radius: var(--border-radius-strong);
-  outline: 1px solid var(--background-border-color);
+  outline: 1px solid var(--border-subtle);
   border: none;
   margin-left: 4px;
   margin-right: -4px;
@@ -66,8 +72,6 @@ html {
 .container__2637a {
   padding-bottom: 0;
 }
-
-
 /* sidebar resize handle */
 .sidebarResizeHandle__5e434 {
   margin-bottom: calc(var(--custom-app-panels-height, 0) + var(--space-xs) + 24px);
@@ -84,18 +88,9 @@ html {
   margin-bottom: calc(var(--custom-app-panels-height, 0) + var(--space-xs) - 3px);
   mask: none;
 }
-/* delete later */
-/* .wrapper_ef3116::after {
-  content: " ";
-  position: absolute;
-  width: 48px;
-  bottom: 0;
-  left: 19px;
-  border-bottom: 1px solid var(--background-border-color);
-} */
 .tree_ef3116 {
   border-radius: var(--border-radius-strong);
-  outline: 1px solid var(--background-border-color);
+  outline: 1px solid var(--border-subtle);
   overflow: hidden !important;
 }
 .unreadMentionsIndicatorTop_ef3116 {
@@ -105,35 +100,25 @@ html {
 .unreadMentionsIndicatorBottom_ef3116 {
   margin-left: 8px;
 }
-
-
-/* Pin Home Button */ 
 .tutorialContainer__1f388 { 
-  position: sticky;
-  top: 0;
-  z-index: 1;
-} 
-.tutorialContainer__1f388::before { 
-  content: " ";
-  position: absolute;
-  margin-top: -4px;
-  height: 50px;
-  width: 68px;
-  border-radius: 16px 16px 0 0;
-  background-color: var(--background-secondary-color);
-  border-bottom: 1px solid var(--background-border-color);
+  top: 4px;
 } 
 .stack_dbd263 [style="margin-bottom: 4px;"] {
   margin-bottom: 0 !important;
-  margin-top: 2px;
+  transform: translateY( 1px );
 }
 
+/* nitro/shop/quests tabs */
+.applicationStore_f07d62, .shop__6db1d, .container__955a3 {
+  border-radius: var(--border-radius-strong);
+  outline: 1px solid var(--border-subtle);
+}
 
 /* user/activity panels resizing */ 
 .visual-refresh section.panels__5e434 { 
   margin-left: 8px;
   border-radius: var(--border-radius-strong);
-  outline: 1px solid var(--background-border-color);
+  outline: 1px solid var(--border-subtle);
   width: calc(var(--custom-guild-sidebar-width) + 11px ) !important; 
   .actionButtons_e131a9 button { 
     padding: 0; 
@@ -142,8 +127,8 @@ html {
 .panels__5e434>div {
   border-radius: var(--border-radius-strong) var(--border-radius-strong) 0 0;
 }
-.container__37e49 {
-  border-radius: 0 0 var(--border-radius-strong) var(--border-radius-strong) !important;
+.container__37e49, .fitInAccount__4bbc6 {
+  border-radius: 0 var(--border-radius-strong) var(--border-radius-strong) !important;
 }
  
 
@@ -165,10 +150,19 @@ html {
 
 /* lil bar next to selected/hovered server */
 .item__58105 {
-  background-color: var(--border-strong);
+  /* background-color: var(--border-strong); */
   border-radius: var(--border-radius-weak);
   width: 4px;
   margin-left: 4px;
+}
+
+
+/* unread messages bar */
+.newMessagesBar__0f481 {
+  border-radius: var(--border-radius-strong);
+  top: 8px;
+  margin-inline: 1%;
+  margin-inline-start: 1%;
 }
 
 
@@ -212,13 +206,100 @@ html {
 /* my account grid panel */
 #app-mount .field__1fed1 {
   border-radius: var(--border-radius-strong);
-  border: 1px solid var(--background-border-color);
+  border: 1px solid var(--border-subtle);
 }
 
 
+/* friends list */
+.peopleListItem_cc6179 {
+  border-radius: var(--border-radius-strong) !important;
+  border: 1px solid var(--border-subtle) !important; 
+  margin-bottom: 8px !important;
+  transition: all 0.2s ease !important;
+  padding: 16px 10px;
+  padding-inline-start: var(--space-8);
+  /* margin-inline: 20px 10px;
+  margin-inline-start: var(--space-16); */
+}
+
+
+/* active now list */
+.itemCard__7e549 {
+  border-radius: var(--border-radius-strong) !important;
+  border: 1px solid var(--border-subtle) ; 
+  transition: all 0.2s ease !important;
+  margin-inline: 20px 10px;
+  margin-inline-start: var(--space-16);
+}
+.itemCard__7e549:hover {
+  margin-inline: 0;
+  margin-inline-start: 0;
+}
+
+
+/* dms list */
+.interactive_bf202d  {
+  border-radius: var(--border-radius-strong) !important;
+}
+.button_a22cb0 {
+  border-radius: var(--border-radius-medium);
+}
+
+
+/* typing/slowmode islands */
+.typingDots_b88801 {
+  background-color: var(--background-secondary-color);
+  border-radius: 16px !important;
+  padding: 4px 8px;
+  max-width: fit-content;
+}
+.tabularNumbers__4bd52 {
+  background-color: var(--background-secondary-color);
+  border-radius: 16px !important;
+  padding: 4px 8px;
+}
+.inTextChannel_b88801.base_b88801 {
+  padding-left: 6px;
+  margin-top: 16px !important;
+}
+.slowModeIcon_b21699 {
+  margin-left: 0px;
+}
+.text_b88801 {
+  margin-left: 0px !important;
+  padding-left: 8px;
+}
+.visual-refresh .base_b88801 {
+  font-size: 13.5px;
+}
+.visual-refresh .base_b88801 {
+  height: 0;
+  border-top: 0 !important;
+}
+.typingDots_b88801, .cooldownText_b21699 {
+  margin-bottom: 22px;
+}
+.scrollerSpacer__36d07 {
+  height: 50px;
+}
+
+
+/* chat bar */
+.scrollableContainer__74017  {
+  background-color: var(--background-secondary-color);
+  border-radius: var(--border-radius-strong);
+  outline: 1px solid var(--border-subtle);
+}
+.channelTextArea_f75fb0 {
+  border-radius: var(--border-radius-strong);
+}
+
+
+/* reply extension */
 
 
 
+/* context menus */
 
 
 
