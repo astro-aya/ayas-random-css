@@ -9,4 +9,5 @@ A heavy work-in-progress theme centered around the idea of separate UI elements 
 @import url("https://astro-aya.github.io/ayas-random-css/Themes/Islands/islands%20theme.css");
 ```
 
-<img width="1920" height="1032" alt="image" src="https://github.com/user-attachments/assets/4de42e43-8bf1-412f-a4a8-e52badd31e0c" />
+<img width="1920" height="1128" alt="image" src="https://github.com/user-attachments/assets/f25fbb5d-2408-4943-95ba-11ab1b2cd1d2" />
+
