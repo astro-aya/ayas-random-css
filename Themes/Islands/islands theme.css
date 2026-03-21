@@ -318,6 +318,148 @@ section.panels__5e434 {
 
 
 
+/* emoji/gif/sticker picker */
+/* main picker panel */
+.contentWrapper__08434 {
+  border-radius: 16px !important;
+  outline: 1px solid var(--border-subtle) !important;
+  background-color: var(--background-base-lowest) !important;
+  padding-top: 12px;
+}
+.contentWrapper__08434 [class*="categoryList"], #gif-picker-tab-panel .content_fed6d3 {  
+  background-color: var(--background-base-lowest) !important;
+}
+[id*="picker"] [class*="categoryList"] {
+  border-bottom-left-radius: var(--border-radius-strong);
+}
+.categoryList_c0e32c .scrollerBase_d125d2, .categoryList__3ad28 .scroller_affa7e  {  
+  border-right: 1px solid var(--border-subtle) !important;
+}
+.emojiPicker_c0e32c .header_c0e32c, .wrapper_c0e32c .header_c0e32c, .wrapper__8ef02 .header__8ef02, #gif-picker-tab-panel .header_fed6d3 {
+  background-color: var(--background-base-lowest);
+  border-bottom: 1px solid var(--border-subtle);
+}
+.emojiPicker_c0e32c .bodyWrapper_c0e32c {
+  background-color: var(--background-base-lowest);
+  height: 115%;
+  border-bottom-right-radius: var(--border-radius-strong);
+  overflow: visible !important;
+  /* z-index: 1; */
+}
+/* category headers */
+.emojiPickerListWrapper_c0e32c, .wrapper__8ef02 .wrapper_e94b8c {
+  margin-top: 4px;
+}
+.emojiPicker_c0e32c .header_c656ac, .wrapper__8ef02 .packHeader_e94b8c {
+  background-color: var(--background-surface-high);
+  border: 1.5px solid var(--border-subtle);
+  border-radius: var(--border-radius-strong) !important;
+  width: fit-content;
+}
+.emojiPicker_c0e32c .header_c656ac {
+  margin-left: 6px;
+}
+.wrapper__8ef02 .packHeader_e94b8c .header__14245 {
+  margin-left: 8px;
+}
+.contentWrapper__08434 .wrapper__14245, .emojiPicker_c0e32c .wrapper__14245 {
+  margin-bottom: 4px;
+}
+.contentWrapper__08434 .wrapper__14245:after, .emojiPicker_c0e32c .wrapper__14245:after {
+  display: none;
+}
+/* emoji */
+.emojiItem_fc7141, .sticker_c6367b {
+  border-radius: var(--border-radius-strong);
+}
+.emojiItem_fc7141 img, .sticker_c6367b {
+  transition: scale 0.5s ease, border-radius 0.2s ease;
+  transition-delay: 0.2s;
+}
+.emojiItemSelected_fc7141 img, .stickerInspected_c6367b {
+  scale: 1.1;
+  border-radius: var(--border-radius-strong);
+  transition: scale 0.5s ease, border-radius 0.2s ease;
+}
+/* sticker */
+.row_c6367b {
+  column-gap: 55.5px !important;
+  padding: 8px;
+}
+/* gif */
+#gif-picker-tab-panel .gif__2dc39, [class*="categoryFade"] {
+  outline: 1px solid var(--border-subtle);
+  border-radius: var(--border-radius-medium) !important;
+}
+.result__2dc39, .container_fed6d3 {
+  border-radius: 12px;
+}
+.result__2dc39:after {
+  display: none;
+}
+/* emoji inspector island */
+.emojiPicker_c0e32c .inspector_c0e32c, .wrapper_e94b8c .inspector_aeaaeb {
+  background-color: var(--background-surface-high); 
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--border-radius-strong);
+  width: fit-content;
+  padding: 12px;
+  z-index: 2;
+  margin-left: auto;
+  margin-bottom: 4px;
+  margin-right: 4px;
+} 
+/* sticker inspector fix */
+.wrapper__8ef02 .scroller_affa7e {
+  height: 115%;
+}
+.wrapper_e94b8c .inspector_aeaaeb {
+  margin-bottom: 8px;
+}
+/* hot and new emojis */
+.newlyAddedBadge_aeaaeb, .topGuildEmojiBadge_aeaaeb {
+  margin-left: 8px;
+}
+.newlyAddedBadge_aeaaeb [class*="semibold"], .topGuildEmojiBadge_aeaaeb [class*="semibold"] {
+  display: none;
+}
+.newlyAddedBadge_aeaaeb::after, .topGuildEmojiBadge_aeaaeb::after {
+  color: white;
+  font-family: var(--font-primary);
+  font-size: 14px;
+  line-height: 1.3;
+  font-weight: 600;
+}
+.newlyAddedBadge_aeaaeb::after {
+  content: "New";
+}
+.topGuildEmojiBadge_aeaaeb::after {
+  content: "Hot";
+}
+/* unicode/sticker pack shortcut */
+[id*="picker"] [class*="wrapper"] [class*="Shortcut"] {
+  opacity: 0%;
+  width: 0px;
+  height: 0px; 
+  transition: 0.25s;
+  border-radius: 30px;
+  background-color: var(--background-base-low);
+  border: 2px solid var(--border-subtle);
+  margin-left: 4px;
+  margin-bottom: 4px;
+}
+[id*="picker"] [class*="wrapper"]:hover [class*="Shortcut"] {
+  opacity: 100%;
+  height: 36px;
+  width: 36px;
+  transition: 0.25s;
+}
+
+
+
+
+
+
 
 
 
