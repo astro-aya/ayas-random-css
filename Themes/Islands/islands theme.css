@@ -454,6 +454,18 @@ section.panels__5e434 {
     border-inline-start: 0;
 }
 
+
+/* stolen accounts popup wip */
+.safetyBanner__51e4d {
+  border-radius: var(--border-radius-medium);
+  border: 1px solid var(--border-subtle);
+  box-shadow: none;
+  /* width: fit-content;
+  margin-left: 5% !important;
+  margin-right: 1% !important; */
+}
+
+
 /* context menus */
 
 
