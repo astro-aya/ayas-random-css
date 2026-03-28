@@ -1,7 +1,7 @@
-/* Account Details Grid - dablulite */ @import url(//dablulite.github.io/css-snippets/AccountDetailsGrid/import.css);
-/* chat bar button context menu - davart154 */ @import url(https://davart154.github.io/Themes/Snippets/Chat%20Bar%20Context%20Menu/ChatContextMenuSource.css); 
-/* collapsing member list - amozeo */ @import url(https://raw.githubusercontent.com/amozeo/discord-css-snippets/refs/heads/main/snippets/compact-memberlist.css);
-/* CompactTabs - Krammeth */ @import url('https://raw.githubusercontent.com/Krammeth/css-snippets/refs/heads/main/CompactTabs.css');
+/* Account Details Grid - @dablulite */ @import url(//dablulite.github.io/css-snippets/AccountDetailsGrid/import.css);
+/* chat bar button context menu - @davart154 */ @import url(https://davart154.github.io/Themes/Snippets/Chat%20Bar%20Context%20Menu/ChatContextMenuSource.css); 
+/* collapsing member list - @amozeo */ @import url(https://raw.githubusercontent.com/amozeo/discord-css-snippets/refs/heads/main/snippets/compact-memberlist.css);
+/* CompactTabs - @Krammeth */ @import url('https://raw.githubusercontent.com/Krammeth/css-snippets/refs/heads/main/CompactTabs.css');
 
 
 /* Theme attributes */
@@ -148,6 +148,7 @@ section.panels__5e434 {
 .align-chat-input [class*="panels"] [class*="inner"], .align-chat-input [class*="rtcConnectionStatus"] { /* update this */ 
   height: fit-content; 
 } 
+
 
 /* lil bar next to selected/hovered server */
 .item__58105 {
@@ -344,7 +345,7 @@ section.panels__5e434 {
   margin-top: 4px;
 }
 .emojiPicker_c0e32c .header_c656ac, .wrapper__8ef02 .packHeader_e94b8c {
-  background-color: var(--background-surface-high);
+  background-color: var(--background-base-low);
   border: 1px solid var(--border-subtle);
   border-radius: var(--border-radius-strong) !important;
   width: fit-content;
@@ -466,9 +467,82 @@ section.panels__5e434 {
 }
 
 
+/* collapsing member list addons */
+.members_c8ffbb {
+  border-inline-start: 1px solid var(--border-subtle);
+}
+.container_c8ffbb {
+  border: 0;
+}
+
+
+/* chat bar button context menu addons */
+.channelTextArea_f75fb0 .buttons__74017 {
+  border-radius: var(--border-radius-strong) !important;
+}
+
+
 /* context menus */
+.menu_c1e9c4, .noiseCancellationPopout_e131a9 {
+  border-radius: var(--border-radius-strong);
+}
 
 
+/* tooltips */
+.tooltip__4e35b {
+  border-radius: var(--border-radius-strong);
+}
+.favButton__2dc39 {
+  border-radius: var(--border-radius-medium);
+}
+
+
+/* message tool bar */
+
+
+/* pinned messages popup */
+.messagesPopoutWrap_e8b59c, .messagesPopoutWrap_e8b59c .messageGroupWrapper_e8b59c {
+  border-radius: var(--border-radius-strong);
+}
+
+
+/* modals */
+[data-mana-component="modal"] {
+  border-radius: var(--border-radius-strong);
+}
+
+
+/* vencord spotify controls plugin */
+#vc-spotify-album-expanded-wrapper img {
+  border-radius: var(--border-radius-strong) !important;
+}
+
+
+/* mentioned message background color */
+.message__5126c.cozyMessage__5126c, .mentioned__5126c::after {
+  border-radius: 0px var(--border-radius-strong) var(--border-radius-strong) 0px;
+}
+.mentioned__5126c:before {
+  background-color: var(--primary-accent-color);
+}
+.mentioned__5126c::after {
+  background-color: var(--primary-accent-color);
+  opacity: 0.2; 
+
+  content: "";
+  position: absolute;
+  top: 0; 
+  left: 0;
+  width: 100%; 
+  height: 100%;  
+  z-index: -1;
+}
+.mentioned__5126c:hover::after {
+  opacity: 0.15 !important; 
+}
+.mentioned__5126c, .message__5126c.mentioned__5126c.selected__5126c, .mouse-mode.full-motion .message__5126c.mentioned__5126c:hover {
+  background-color: transparent !important;
+}
 
 
 
