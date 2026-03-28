@@ -663,7 +663,7 @@ nav.guilds__5e434  {
 [data-author-id="539862975163531265"] .vc-platform-indicator svg, [href="/channels/@me/946925712810606703"] .vc-platform-indicator svg {
   fill: #5865F2;
 }
-[aria-label="anonymous_ninja, Online"] svg [fill="#45a366"]:not( .container__37e49 [aria-label="anonymous_ninja, Online"] svg [fill="#45a366"] ), [aria-label="anonymous_ninja, Online via mobile"] svg [fill="#45a366"]:not( .container__37e49 [aria-label="anonymous_ninja, Online via mobile"] svg [fill="#45a366"] ), [aria-label="anonymous_ninja, Idle"] svg [fill="#ffc04e"]:not( .container__37e49 [aria-label="anonymous_ninja, Idle"] svg [fill="#ffc04e"] ), [aria-label="anonymous_ninja, Do Not Disturb"] svg [fill="#da3e44"]:not( .container__37e49 [aria-label="anonymous_ninja, Do Not Disturb"] svg [fill="#da3e44"] ), [aria-label="anonymous_ninja, Offline"] svg [fill="#84858d"]:not( .container__37e49 [aria-label="anonymous_ninja, Offline"] svg [fill="#84858d"] ), [aria-label="anonymous_ninja, Invisible"] svg [fill="#84858d"]:not( .container__37e49 [aria-label="anonymous_ninja, Streaming"] svg [fill="#84858d"] ) {
+[aria-label="astrophiliaya, Online"] svg [fill="#45a366"]:not( .container__37e49 [aria-label="astrophiliaya, Online"] svg [fill="#45a366"] ), [aria-label="astrophiliaya, Online via mobile"] svg [fill="#45a366"]:not( .container__37e49 [aria-label="astrophiliaya, Online via mobile"] svg [fill="#45a366"] ), [aria-label="astrophiliaya, Idle"] svg [fill="#ffc04e"]:not( .container__37e49 [aria-label="astrophiliaya, Idle"] svg [fill="#ffc04e"] ), [aria-label="astrophiliaya, Do Not Disturb"] svg [fill="#da3e44"]:not( .container__37e49 [aria-label="astrophiliaya, Do Not Disturb"] svg [fill="#da3e44"] ), [aria-label="astrophiliaya, Offline"] svg [fill="#84858d"]:not( .container__37e49 [aria-label="astrophiliaya, Offline"] svg [fill="#84858d"] ), [aria-label="astrophiliaya, Invisible"] svg [fill="#84858d"]:not( .container__37e49 [aria-label="astrophiliaya, Streaming"] svg [fill="#84858d"] ) {
   fill: #d5d5d2;
 }
 [data-author-id="946923909771571231"] .vc-platform-indicator svg, [href="/channels/@me/946925712810606703"] .vc-platform-indicator svg {
@@ -863,13 +863,6 @@ nav.guilds__5e434  {
   fill: #2d368d;
 }
 
-/* kim */
-[aria-label="mouseql, Online"] svg [fill="#45a366"], [aria-label="mouseql, Online via mobile"] svg [fill="#45a366"], [aria-label="mouseql, Idle"] svg [fill="#ffc04e"], [aria-label="mouseql, Do Not Disturb"] svg [fill="#da3e44"], [aria-label="mouseql, Offline"] svg [fill="#84858d"], [aria-label="mouseql, Invisible"] svg [fill="#84858d"], [aria-label="mouseql, Streaming"] svg [fill="#9147ff"] {
-  fill: #d0cfc4;
-}
-[data-author-id="502224755089211403"] .vc-platform-indicator svg, [href="/channels/@me/788820110185857024"] .vc-platform-indicator svg {
-  fill: #d0cfc4;
-}
 
 /* discord loading icon */
 .container_a2f514.fixClipping_efbae7 {
@@ -1126,7 +1119,6 @@ html:not(.app-focused) .newMessagesBar__0f481 {
 /* sticker */
 .row_c6367b {
   column-gap: 55.5px !important;
-  padding: 8px;
   margin-left: 8px;
 }
 
