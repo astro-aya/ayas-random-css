@@ -1,14 +1,8 @@
 /* Account Details Grid - @dablulite */ @import url(//dablulite.github.io/css-snippets/AccountDetailsGrid/import.css);
-/* chat bar button context menu - @davart154 */ @import url(https://davart154.github.io/Themes/Snippets/Chat%20Bar%20Context%20Menu/ChatContextMenuSource.css); 
-/* collapsing member list - @amozeo */ @import url(https://raw.githubusercontent.com/amozeo/discord-css-snippets/refs/heads/main/snippets/compact-memberlist.css);
 /* CompactTabs - @Krammeth */ @import url('https://raw.githubusercontent.com/Krammeth/css-snippets/refs/heads/main/CompactTabs.css');
 
-
-/* Theme attributes */
+/* Theme settings */
 :root {
-  /* --background-primary-color: #323339;
-  --background-secondary-color: #2c2d32;
-  --background-tertiary-color: #25262a; */
   --primary-accent-color: #5865F2;
   --window-tint: #0005;
   --border-radius-strong: 16px;
@@ -18,7 +12,6 @@
   --gap-medium: 12px;
   --gap-weak: 8px;
 }
-
 /* CompactTabs settings */
 :root {
   --server-tabs: true;
@@ -27,13 +20,13 @@
 
 
 /* background image */
-html {
+/* html {
   background-image: url("https://i.pinimg.com/736x/01/e2/4d/01e24db8e94284de8c4cf241d78fc8a2.jpg"); 
   background-size: cover;
   background-color: #141518;
   background-blend-mode: color-dodge;
 }
-/* body { 
+body { 
   background: var(--window-tint) !important; 
   image-rendering: auto;
 } */
@@ -473,12 +466,6 @@ section.panels__5e434 {
 }
 .container_c8ffbb {
   border: 0;
-}
-
-
-/* chat bar button context menu addons */
-.channelTextArea_f75fb0 .buttons__74017 {
-  border-radius: var(--border-radius-strong) !important;
 }
 
 
