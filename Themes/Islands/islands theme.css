@@ -252,13 +252,15 @@ section.panels__5e434 {
 /* typing/slowmode islands */
 .typingDots_b88801 {
   background-color: var(--background-base-lowest);
-  border-radius: 16px !important;
+  border-radius: var(--border-radius-strong) !important;
+  border: 1px solid var(--border-subtle);
   padding: 4px 8px;
   max-width: fit-content;
 }
 .tabularNumbers__4bd52 {
   background-color: var(--background-base-lowest);
-  border-radius: 16px !important;
+  border-radius: var(--border-radius-strong) !important;
+  border: 1px solid var(--border-subtle);
   padding: 4px 8px;
 }
 .inTextChannel_b88801.base_b88801 {
