@@ -13,8 +13,7 @@ A work-in-progress Discord theme separating UI elements into distinguishable 'is
   <summary>Optional theme settings for more customizability.</summary>
   
 ```css
-/* collapsing member list - @amozeo */
-@import url(https://raw.githubusercontent.com/amozeo/discord-css-snippets/refs/heads/main/snippets/compact-memberlist.css);
+/* collapsing member list - @amozeo */ @import url(https://raw.githubusercontent.com/amozeo/discord-css-snippets/refs/heads/main/snippets/compact-memberlist.css);
 
 /* Theme settings */
 :root {
