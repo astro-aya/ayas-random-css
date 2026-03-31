@@ -21,9 +21,7 @@ A work-in-progress Discord theme separating UI elements into distinguishable 'is
   --border-radius-strong: 16px !important;
   --border-radius-medium: 12px !important;
   --border-radius-weak: 8px !important;
-  --gap-strong: 16px !important;
-  --gap-medium: 12px !important;
-  --gap-weak: 8px !important;
+  --ocean-gap: 8px !important;
 }
 
 /* CompactTabs settings */
