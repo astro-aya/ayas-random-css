@@ -8,9 +8,7 @@
   --border-radius-strong: 16px;
   --border-radius-medium: 12px;
   --border-radius-weak: 8px;
-  --gap-strong: 16px;
-  --gap-medium: 12px;
-  --gap-weak: 8px;
+  --ocean-gap: 8px;
 }
 
 /* CompactTabs settings */
@@ -37,49 +35,56 @@ body {
 .content__5e434 {
   padding: 4px;
 }
+
 /* main content */
 .page__5e434 {
-  padding: var(--gap-weak);
+  padding: var(--ocean-gap);
   padding-top: 1px;
   padding-right: 10px;
   margin-top: -1px;
 }
-.chat_f75fb0, .container__133bf {
+.chat_f75fb0, .container__133bf, .chat_f75fb0.threadSidebarOpen_f75fb0, .container__01ae2 {
   border-radius: var(--border-radius-strong);
   outline: 1px solid var(--border-subtle);
 }
+/* nitro/shop/quests tabs */
+.applicationStore_f07d62, .shop__6db1d, .container__955a3 {
+  border-radius: var(--border-radius-strong);
+  outline: 1px solid var(--border-subtle);
+}
+/* threads */
+.chatLayerWrapper__01ae2 {
+  padding: 0 10px 0;
+  height: calc( 99% - 1.5px);
+  margin-top: 1px;
+}
+.chat_f75fb0.threadSidebarOpen_f75fb0 {
+  margin-right: 4px;
+}
+/* .resizeHandle__01ae2 {
+  background-color: red;
+  width: 8px;
+} */
 
-/* sidebar */
-.sidebar__5e434 {
-  padding:  var(--gap-weak);
-  padding-left: 2px;
-}
-.sidebarList__5e434 {
-  border-radius: var(--border-radius-strong);
+/* user/activity panels resizing */ 
+section.panels__5e434 { 
+  left: 10px;
+  margin-bottom: 1px;
+  border-radius: var(--border-radius-strong) !important;
   outline: 1px solid var(--border-subtle);
-  border: none;
-  margin-left: 4px;
-  margin-right: -4px;
-  margin-bottom: calc(var(--custom-app-panels-height, 0) + var(--space-xs) + 5px);
+  width: calc(var(--custom-guild-sidebar-width) + 11px ) !important; 
+  .actionButtons_e131a9 button { 
+    padding: 0; 
+  } 
 }
-.scroller__99e7c  {
-  margin-bottom: 0;
-}
-.container__2637a {
-  padding-bottom: 0;
-}
-/* sidebar resize handle */
-.sidebarResizeHandle__5e434 {
-  margin-bottom: calc(var(--custom-app-panels-height, 0) + var(--space-xs) + 24px);
-  margin-top: 24px;
-  margin-right: 2px;
-  border-radius: var(--border-radius-strong);
+.container__37e49, .fitInAccount__4bbc6 {
+  border-radius: inherit;
 }
 
 /* guilds list */
 .wrapper_ef3116 {
   background-color: inherit;
-  padding: var(--gap-weak);
+  padding: var(--ocean-gap);
   padding-top: 1px;
   margin-top: -1px;
   margin-bottom: calc(var(--custom-app-panels-height, 0) + var(--space-xs) - 3px);
@@ -105,27 +110,33 @@ body {
   transform: translateY( 1px );
 }
 
-/* nitro/shop/quests tabs */
-.applicationStore_f07d62, .shop__6db1d, .container__955a3 {
+/* sidebar */
+.sidebar__5e434 {
+  padding:  var(--ocean-gap);
+  padding-left: 2px;
+}
+.sidebarList__5e434 {
   border-radius: var(--border-radius-strong);
   outline: 1px solid var(--border-subtle);
+  border: none;
+  margin-left: 4px;
+  margin-right: -4px;
+  margin-bottom: calc(var(--custom-app-panels-height, 0) + var(--space-xs) + 5px);
+}
+.scroller__99e7c  {
+  margin-bottom: 0;
+}
+.container__2637a {
+  padding-bottom: 0;
+}
+/* sidebar resize handle */
+.sidebarResizeHandle__5e434 {
+  margin-bottom: calc(var(--custom-app-panels-height, 0) + var(--space-xs) + 24px);
+  margin-top: 24px;
+  margin-right: 2px;
+  border-radius: var(--border-radius-strong);
 }
 
-/* user/activity panels resizing */ 
-section.panels__5e434 { 
-  left: 10px;
-  margin-bottom: 1px;
-  border-radius: var(--border-radius-strong) !important;
-  outline: 1px solid var(--border-subtle);
-  width: calc(var(--custom-guild-sidebar-width) + 11px ) !important; 
-  .actionButtons_e131a9 button { 
-    padding: 0; 
-  } 
-}
-.container__37e49, .fitInAccount__4bbc6 {
-  border-radius: inherit;
-}
- 
 
 /* vc panel redesign */ 
 .container_e131a9 { 
@@ -303,6 +314,9 @@ section.panels__5e434 {
 .stackedBars__74017 {
   background-color: var(--background-base-lowest);
   border-radius: var(--border-radius-strong) var(--border-radius-strong) 0 0 !important;
+}
+.theme-dark.custom-theme-background .replyBar__841c8, .theme-dark.custom-theme-background .threadSuggestionBar__841c8 {
+  background: transparent;
 }
 
 
