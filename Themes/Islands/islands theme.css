@@ -12,6 +12,7 @@
   --gap-medium: 12px;
   --gap-weak: 8px;
 }
+
 /* CompactTabs settings */
 :root {
   --server-tabs: true;
