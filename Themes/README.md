@@ -5,5 +5,4 @@
 
 ### Projects
 * [Islands Discord theme](https://github.com/astro-aya/ayas-random-css/tree/main/Themes/Islands)
-
 * Hopefully more to come!
