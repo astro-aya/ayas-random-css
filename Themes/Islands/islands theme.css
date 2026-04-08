@@ -212,10 +212,16 @@ section.panels__5e434 {
 /* friends list */
 .peopleListItem_cc6179 {
   border-radius: var(--border-radius-strong) !important;
-  border: 0;
   transition: all 0.2s ease !important;
-  padding: 16px 10px;
-  padding-inline-start: var(--space-8);
+  margin-inline: 20px 10px !important;
+  margin-inline-start: var(--space-16) !important;
+}
+.peopleListItem_cc6179:hover {
+  margin-inline: inherit !important;
+  margin-inline-start: var(--space-8) !important;
+}
+.divider_cc6179 {
+  background: 0;
 }
 .peopleListItem_cc6179 .actionButton_f8fa06 {
   background-color: var(--background-base-lowest);
@@ -286,6 +292,46 @@ section.panels__5e434 {
 }
 .scrollerSpacer__36d07 {
   height: 50px;
+}
+
+
+/* profile popup styling */
+.inner_c0bea0, .outer_c0bea0  {
+  border-radius: var(--border-radius-strong);
+}
+/* .outer_c0bea0 { make big popup fit in screen better 
+  height: calc(100% - (var(--custom-viewport-padding))*2);
+  --custom-viewport-padding: var(--space-40);
+} */
+
+/* badge island */
+.container__8061a {
+  background-color: var(--profile-gradient-modal-background-color) !important;
+  border: 1px solid var(--profile-gradient-secondary-color) !important;
+  border-radius: var(--border-radius-strong);
+  padding: 0.5px 4px 0.5px 4px !important;
+}
+/* username and pronoun islands */
+.tags__63ed3 .pronounsText__63ed3, .tags__63ed3 .userTagUsername__63ed3 {
+  background-color: var(--profile-gradient-modal-background-color) !important;
+  border: 1px solid var(--profile-gradient-secondary-color) !important;
+  border-radius: var(--border-radius-strong);
+  padding: 1px 4px 1px 5px !important;
+}
+.tags__63ed3 .dotSpacer__63ed3 {
+  display: none;
+}
+/* clan tag island */
+.tags__63ed3 .guildTagContainer__63ed3 {
+  background-color: var(--profile-gradient-modal-background-color) !important;
+  border: 1px solid var(--profile-gradient-secondary-color) !important;
+  border-radius: var(--border-radius-strong);
+  padding: 1px !important;
+  height: 22px;
+}
+/* profile menu styling */
+.body_ce8328 .overlay_c0bea0 {
+  border-radius: var(--border-radius-strong);
 }
 
 
