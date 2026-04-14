@@ -414,12 +414,12 @@ section.panels__5e434 {
 .emojiItem_fc7141, .sticker_c6367b {
   border-radius: var(--border-radius-strong);
 }
-.emojiItem_fc7141 img, .sticker_c6367b {
+.emojiItem_fc7141 img, .emojiItem_fc7141 div, .sticker_c6367b {
   transition: scale 0.5s ease, border-radius 0.2s ease;
   transition-delay: 0.2s;
 }
-.emojiItemSelected_fc7141 img, .stickerInspected_c6367b {
-  scale: 1.1;
+.emojiItemSelected_fc7141 img, .emojiItemSelected_fc7141 div, .stickerInspected_c6367b {
+  scale: 1.05;
   border-radius: var(--border-radius-strong);
   transition: scale 0.5s ease, border-radius 0.2s ease;
 }
@@ -531,7 +531,7 @@ section.panels__5e434 {
 
 
 /* tooltips */
-.tooltip__4e35b {
+.tooltip__4e35b, .tooltip_c36707  {
   border-radius: var(--border-radius-strong);
 }
 .favButton__2dc39 {
@@ -540,6 +540,10 @@ section.panels__5e434 {
 
 
 /* message tool bar */
+.buttonContainer_c19a55>div>div /* find proper selector */ {
+  border-radius: var(--border-radius-strong);
+  border: 1px solid var(--border-subtle);
+}
 
 
 /* pinned messages popup */
