@@ -76,7 +76,7 @@ section.panels__5e434 {
     padding: 0; 
   } 
 }
-.container__37e49, .fitInAccount__4bbc6 {
+.container__37e49, .fitInAccount_df39b2 {
   border-radius: inherit;
 }
 
@@ -299,39 +299,40 @@ section.panels__5e434 {
 .inner_c0bea0, .outer_c0bea0  {
   border-radius: var(--border-radius-strong);
 }
+/* profile menu styling */
+.body_ce8328 .overlay_c0bea0 {
+  border-radius: var(--border-radius-strong);
+}
+
 /* .outer_c0bea0 { make big popup fit in screen better 
   height: calc(100% - (var(--custom-viewport-padding))*2);
   --custom-viewport-padding: var(--space-40);
 } */
 
-/* badge island */
-.container__8061a {
-  background-color: var(--profile-gradient-modal-background-color) !important;
-  border: 1px solid var(--profile-gradient-secondary-color) !important;
-  border-radius: var(--border-radius-strong);
-  padding: 0.5px 4px 0.5px 4px !important;
-}
 /* username and pronoun islands */
-.tags__63ed3 .pronounsText__63ed3, .tags__63ed3 .userTagUsername__63ed3 {
+.usernameAndPronounsRow__26b1f .userTag__26b1f {
   background-color: var(--profile-gradient-modal-background-color) !important;
   border: 1px solid var(--profile-gradient-secondary-color) !important;
   border-radius: var(--border-radius-strong);
   padding: 1px 4px 1px 5px !important;
 }
-.tags__63ed3 .dotSpacer__63ed3 {
+.usernameAndPronounsRow__26b1f .dotSpacer__26b1f {
   display: none;
 }
 /* clan tag island */
-.tags__63ed3 .guildTagContainer__63ed3 {
+.usernameAndPronounsRow__26b1f .guildTagContainer__26b1f {
   background-color: var(--profile-gradient-modal-background-color) !important;
   border: 1px solid var(--profile-gradient-secondary-color) !important;
   border-radius: var(--border-radius-strong);
   padding: 1px !important;
   height: 22px;
 }
-/* profile menu styling */
-.body_ce8328 .overlay_c0bea0 {
+/* badge island */
+.container__8061a {
+  background-color: var(--profile-gradient-modal-background-color) !important;
+  border: 1px solid var(--profile-gradient-secondary-color) !important;
   border-radius: var(--border-radius-strong);
+  padding: 0.5px 4px 0.5px 4px !important;
 }
 
 
@@ -558,6 +559,12 @@ section.panels__5e434 {
 }
 
 
+/* context menu focused option */
+.focused_c1e9c4 {
+  border-radius: var(--border-radius-medium) !important;
+}
+
+
 /* vencord spotify controls plugin */
 #vc-spotify-album-expanded-wrapper img {
   border-radius: var(--border-radius-strong) !important;
@@ -589,6 +596,8 @@ section.panels__5e434 {
 .mentioned__5126c, .message__5126c.mentioned__5126c.selected__5126c, .mouse-mode.full-motion .message__5126c.mentioned__5126c:hover {
   background-color: transparent !important;
 }
+
+
 
 
 
