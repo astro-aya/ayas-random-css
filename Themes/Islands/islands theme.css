@@ -559,6 +559,13 @@ section.panels__5e434 {
 }
 
 
+/* notice bar */
+.notice__6e2b9 {
+  border-radius: var(--border-radius-strong);
+  margin: 12px 14px 12px 4px;
+}
+
+
 /* context menu focused option */
 .focused_c1e9c4 {
   border-radius: var(--border-radius-medium) !important;
@@ -598,6 +605,21 @@ section.panels__5e434 {
 }
 
 
+/* theme vencord update notification by Benzeel V1 */
+.vc-notification-root {
+  /* background: #8d063a46;
+  backdrop-filter: blur(40px);
+  border: 2px solid #b32b5838;
+  transition: 0.5s ease; */
+  border-radius: var(--border-radius-strong);
+  outline: 1px solid var(--border-subtle);
+}
+/* .vc-notification-root:hover {
+  background: #c5084765;
+  border: 2px solid #b80d46a6;
+  transition: 0.3s ease;
+  transform: scale(99%) translateY(2%);
+} */
 
 
 
