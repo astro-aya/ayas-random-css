@@ -11,6 +11,6 @@ I'm still learning html and css but it's fun to mess around and customize anythi
 
 * [Gallery Discord theme](https://github.com/astro-aya/ayas-random-css/tree/main/Themes/Gallery)
 
-* [Pastel Discord status icons](https://github.com/astro-aya/ayas-random-css/tree/main/Snippets/Pastel%20status%20colors)
+* [Discord snippets](https://github.com/astro-aya/ayas-random-css/tree/main/Snippets)
 
 <!-- ![Image of a Parabeetle from Super Mario games](https://github.com/user-attachments/assets/685049d1-1a20-473f-9ee8-750240b200ba) -->
