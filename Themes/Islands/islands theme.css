@@ -1,5 +1,5 @@
 /* CompactTabs - @Krammeth */ @import url('https://raw.githubusercontent.com/Krammeth/css-snippets/refs/heads/main/CompactTabs.css');
-/* server list revert - @Scattagain */ @import url("https://scattagain.github.io/VencordStuff/css/GuildbarRevert.css");
+/* guild list revert - @Scattagain */ @import url("https://scattagain.github.io/VencordStuff/css/GuildbarRevert.css");
 
 /* Theme settings */
 :root {
@@ -34,6 +34,7 @@ body {
 /* section spacing */ 
 .content__5e434 {
   padding: 4px;
+  margin-top: -8px;
 }
 
 /* main content */
@@ -81,7 +82,20 @@ section.panels__5e434 {
   border-radius: inherit;
 }
 
-/* guilds list */
+/* quest panel */
+.content__0d616, .wrapper__0d616 {
+  border-radius: var(--border-radius-strong) var(--border-radius-strong) 0 0;
+}
+.content__0d616{
+  border: 1px solid var(--border-subtle);
+}
+.postEnrollmentBackground__24e2c {
+  background-color: var(--background-base-lowest);
+  background-image: none !important;
+  border-top: 0;
+}
+
+/* guild list */
 .wrapper_ef3116 {
   background-color: inherit;
   padding: var(--ocean-gap);
@@ -104,6 +118,7 @@ section.panels__5e434 {
 }
 .tutorialContainer__1f388 { 
   top: 4px;
+  margin-top: 4px;
 } 
 .stack_dbd263 [style="margin-bottom: 4px;"] {
   margin-bottom: 0 !important;
@@ -298,17 +313,32 @@ section.panels__5e434 {
 
 /* profile popup styling */
 .inner_c0bea0, .outer_c0bea0  {
-  border-radius: var(--border-radius-strong);
+  border-radius: var(--border-radius-strong) !important;
 }
 /* profile menu styling */
 .body_ce8328 .overlay_c0bea0 {
   border-radius: var(--border-radius-strong);
 }
+/* big profile popup customize profile island */
+.panel_b08638.isExpanded__9c3be {
+  border-radius: var(--border-radius-strong);
+  margin-left: calc( var(--ocean-gap) * -1.5);
+}
+/* profile items */
+.overlay_c0bea0, .container__62dd3, .tabBarPanel__37bfc .button_a22cb0, .card__39ec2, .notice__4fbcc, .card__85bea {
+  border-radius: var(--border-radius-strong) !important;
+}
+.tabBarPanel__37bfc .row__89036, .tabBarPanel__37bfc .row__0a95c {
+  border-radius: var(--border-radius-strong) !important;
+  transition: all 0.2s ease !important;
+  margin-inline: 20px 10px !important;
+  margin-inline-start: var(--space-16) !important;
+}
+.tabBarPanel__37bfc .row__89036:hover, .tabBarPanel__37bfc .row__0a95c:hover {
+  margin-inline: inherit !important;
+  margin-inline-start: var(--space-8) !important;
+}
 
-/* .outer_c0bea0 { make big popup fit in screen better 
-  height: calc(100% - (var(--custom-viewport-padding))*2);
-  --custom-viewport-padding: var(--space-40);
-} */
 
 /* username and pronoun islands */
 .usernameAndPronounsRow__26b1f .userTag__26b1f {
@@ -321,12 +351,15 @@ section.panels__5e434 {
   display: none;
 }
 /* clan tag island */
-.usernameAndPronounsRow__26b1f .guildTagContainer__26b1f {
+.usernameAndPronounsRow__26b1f .guildTag__26b1f, .usernameAndPronounsRow__26b1f .selectButton_ac381c {
   background-color: var(--profile-gradient-modal-background-color) !important;
   border: 1px solid var(--profile-gradient-secondary-color) !important;
   border-radius: var(--border-radius-strong);
-  padding: 1px !important;
+  padding: 4px;
   height: 22px;
+}
+.usernameAndPronounsRow__26b1f .selectButton_ac381c {
+  padding: 0px 2px 0px 4px;
 }
 /* badge island */
 .container__8061a {
@@ -370,7 +403,7 @@ section.panels__5e434 {
   background-color: var(--background-base-lowest) !important;
   padding-top: 12px;
 }
-.contentWrapper__08434 [class*="categoryList"], #gif-picker-tab-panel .content_fed6d3 {  
+.contentWrapper__08434 [class*="categoryList"], #gif-picker-tab-panel .content_fed6d3, .animatorLeft_faf9c0 .wrapper__4e6ce {  
   background-color: var(--background-base-lowest) !important;
 }
 [id*="picker"] [class*="categoryList"] {
@@ -499,10 +532,27 @@ section.panels__5e434 {
   transition: 0.25s;
 }
 
+/* reaction picker */
+.wrapper_c0e32c, .wrapper_c0e32c.isBurstReactionPicker_c0e32c {
+  border-radius: var(--border-radius-strong) !important;
+}
+.animatorLeft_faf9c0 .header_c0e32c {
+  border-radius: var(--border-radius-strong) var(--border-radius-strong) 0 0;
+  outline: 1px solid var(--border-subtle) !important;
+}
+.animatorLeft_faf9c0 .emojiPicker_c0e32c  {
+  border-radius: 0 0 var(--border-radius-strong) var(--border-radius-strong);
+  border: 1px solid var(--border-subtle);
+}
+.animatorLeft_faf9c0 {
+  border: 2px solid var(--border-subtle);
+  border-radius: var(--border-radius-strong);
+}
+
 
 /* random border in onyx theme */
 .high-contrast-mode .page__5e434, .theme-midnight .page__5e434 {
-    border-inline-start: 0;
+  border-inline-start: 0;
 }
 
 
@@ -532,8 +582,8 @@ section.panels__5e434 {
 }
 
 
-/* tooltips */
-.tooltip__4e35b, .tooltip_c36707  {
+/* tooltips/popouts */
+.tooltip__4e35b, .tooltip_c36707, .reactionTooltip_bbcccb, .popout__76f04  {
   border-radius: var(--border-radius-strong);
 }
 .favButton__2dc39 {
@@ -541,21 +591,20 @@ section.panels__5e434 {
 }
 
 
-/* message tool bar */
-.buttonContainer_c19a55>div>div /* find proper selector */ {
+/* modals */
+[data-mana-component="modal"], .listbox_cfc01a {
+  border-radius: var(--border-radius-strong);
+}
+
+/* message/attachment tool bar */
+.buttonsInner__5126c.wrapper_f7ecac, .wrapper_f7ecac {
   border-radius: var(--border-radius-strong);
   border: 1px solid var(--border-subtle);
 }
 
 
 /* pinned messages popup */
-.messagesPopoutWrap_e8b59c, .messagesPopoutWrap_e8b59c .messageGroupWrapper_e8b59c {
-  border-radius: var(--border-radius-strong);
-}
-
-
-/* modals */
-[data-mana-component="modal"] {
+.messagesPopoutWrap__432f4 {
   border-radius: var(--border-radius-strong);
 }
 
@@ -567,7 +616,7 @@ section.panels__5e434 {
 }
 
 
-/* context menu focused option */
+/* context menu hovered item */
 .focused_c1e9c4 {
   border-radius: var(--border-radius-medium) !important;
 }
@@ -581,7 +630,7 @@ section.panels__5e434 {
 
 /* mentioned message background color */
 .message__5126c.cozyMessage__5126c, .mentioned__5126c::after {
-  border-radius: 0px var(--border-radius-strong) var(--border-radius-strong) 0px;
+  border-radius: 0px var(--border-radius-medium) var(--border-radius-medium) 0px;
 }
 .mentioned__5126c:before {
   background-color: var(--primary-accent-color);
@@ -603,6 +652,12 @@ section.panels__5e434 {
 }
 .mentioned__5126c, .message__5126c.mentioned__5126c.selected__5126c, .mouse-mode.full-motion .message__5126c.mentioned__5126c:hover {
   background-color: transparent !important;
+}
+
+
+/* ping icon recolor */
+.numberBadge__463b7 {
+  background-color: var(--primary-accent-color) !important;
 }
 
 
