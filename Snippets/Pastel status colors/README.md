@@ -1,7 +1,7 @@
 # Pastel status colors
 
 > [!WARNING]
-> Work-in-progress, not everything will be fully functional or polished.
+> Work-in-progress; not everything will be fully functional or polished.
 
 A snippet that changes the status icon's colors to pastel colors :3 
 
