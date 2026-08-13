@@ -1,7 +1,7 @@
 # Islands Discord theme
 
 > [!WARNING]
-> Work-in-progress, don't expect everything to be fully functional or polished.
+> Work-in-progress, not everything will be fully functional or polished.
 
 A work-in-progress Discord theme separating UI elements into distinguishable 'islands' for a cleaner and less dense layout. Slightly inspired by Microsoft Fluent UI and iOS Liquid Glass design.
 
