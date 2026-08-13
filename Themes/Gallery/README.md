@@ -1,7 +1,7 @@
 # Gallery Discord theme
 
 > [!WARNING]
-> Work-in-progress, not everything will be fully functional or polished.
+> Work-in-progress; not everything will be fully functional or polished.
 
 A work-in-progress Discord theme with a collection of themed backgrounds by various artists. Compatible with the [Islands theme](https://github.com/astro-aya/ayas-random-css/tree/main/Themes/Islands).
 
