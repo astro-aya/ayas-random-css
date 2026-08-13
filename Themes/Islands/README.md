@@ -32,4 +32,3 @@ A work-in-progress Discord theme separating UI elements into distinguishable 'is
 ```
 </details>
 
-<img width="1920" height="1128" alt="image" src="https://github.com/user-attachments/assets/f25fbb5d-2408-4943-95ba-11ab1b2cd1d2" />
