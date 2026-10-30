@@ -831,6 +831,22 @@ nav.guilds__5e434  {
   fill: #2d368d;
 }
 
+/* super! */
+[aria-label="itsuperr, Online"] svg [fill="#45a366"], [aria-label="itsuperr, Online via mobile"] svg [fill="#45a366"], [aria-label="itsuperr, Idle"] svg [fill="#ffc04e"], [aria-label="itsuperr, Do Not Disturb"] svg [fill="#da3e44"], [aria-label="itsuperr, Offline"] svg [fill="#84858d"], [aria-label="itsuperr, Invisible"] svg [fill="#84858d"], [aria-label="itsuperr, Streaming"] svg [fill="#9147ff"] {
+  fill: #663399;
+}
+[data-author-id="435758675995394048"] .vc-platform-indicator svg, [href="/channels/@me/1419746197450788917"] .vc-platform-indicator svg {
+  fill: #663399;
+}
+
+/* placeholder! */
+[aria-label="placerholder_username, Online"] svg [fill="#45a366"], [aria-label="placerholder_username, Online via mobile"] svg [fill="#45a366"], [aria-label="placerholder_username, Idle"] svg [fill="#ffc04e"], [aria-label="placerholder_username, Do Not Disturb"] svg [fill="#da3e44"], [aria-label="placerholder_username, Offline"] svg [fill="#84858d"], [aria-label="placerholder_username, Invisible"] svg [fill="#84858d"], [aria-label="placerholder_username, Streaming"] svg [fill="#9147ff"] {
+  fill: #fff;
+}
+[data-author-id="placeholder_id"] .vc-platform-indicator svg, [href="/channels/@me/placeholder_id"] .vc-platform-indicator svg {
+  fill: #fff;
+}
+
 
 /* discord loading icon */
 .container_a2f514.fixClipping_efbae7 {
@@ -2323,4 +2339,3 @@ h2.membersGroup_c8ffbb:not(:has(span))::before {
 .numberBadge__463b7 {
   background-color: #5865F2 !important;
 }
-
