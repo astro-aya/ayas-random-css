@@ -356,6 +356,7 @@ section.panels_pog62O {
   gap: 0;
 }
 .usernameAndPronounsRow_C2XpHA .container_CJLDJI {
+  border-radius: var(--border-radius-strong);
   outline-offset: -2px !important;
 }
 .container_CJLDJI:has(.field_CJLDJI:focus) {
