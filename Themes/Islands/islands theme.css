@@ -350,23 +350,35 @@ section.panels_pog62O {
 .usernameAndPronounsRow_C2XpHA .dotSpacer_C2XpHA {
   display: none;
 }
+
+.profileBody_s3DB6Y .hasPreview_CJLDJI {
+  border-radius: var(--border-radius-strong);
+  gap: 0;
+}
+.usernameAndPronounsRow_C2XpHA .container_CJLDJI {
+  outline-offset: -2px !important;
+}
+.container_CJLDJI:has(.field_CJLDJI:focus) {
+  margin-left: 4px;
+  margin-right: 5px;
+  min-height: 28px;
+}
 /* clan tag island */
-.usernameAndPronounsRow_C2XpHA .guildTag__26b1f, .usernameAndPronounsRow_C2XpHA .selectButton_ac381c {
+.usernameAndPronounsRow_C2XpHA .selectButtonPill_C3qxaU, .usernameAndPronounsRow_C2XpHA .guildTagPill_C2XpHA  {
   background-color: var(--profile-gradient-modal-background-color) !important;
   border: 1px solid var(--profile-gradient-secondary-color) !important;
   border-radius: var(--border-radius-strong);
-  padding: 4px;
   height: 22px;
 }
-.usernameAndPronounsRow_C2XpHA .selectButton_ac381c {
-  padding: 0px 2px 0px 4px;
-}
 /* badge island */
-.container_IqWmhA {
+.managed_IqWmhA:before {
   background-color: var(--profile-gradient-modal-background-color) !important;
   border: 1px solid var(--profile-gradient-secondary-color) !important;
   border-radius: var(--border-radius-strong);
   padding: 0.5px 4px 0.5px 4px !important;
+}
+.hasAppendedEditSlot_IqWmhA:hover:before {
+  inset-inline-end: calc(var(--space-20)*-1);
 }
 
 
@@ -583,7 +595,7 @@ section.panels_pog62O {
 
 
 /* tooltips/popouts */
-.tooltip_ZDdyhE, .tooltip_3_v8qp, .reactionTooltip_5l5ajC, .popout_j5xNzb  {
+.tooltip_ZDdyhE, .tooltip_3_v8qp, .reactionTooltip_5l5ajC, .popout_j5xNzb, .popout_i44TZ4 {
   border-radius: var(--border-radius-strong);
 }
 .favButton_H8nOze {
@@ -592,14 +604,17 @@ section.panels_pog62O {
 
 
 /* modals */
-[data-mana-component="modal"], .listbox_VrghH6 {
-  border-radius: var(--border-radius-strong);
+[data-mana-component="modal"], .listbox_VrghH6, .listbox_C3qxaU, .modalRoot_vjyUDB   {
+  border-radius: var(--border-radius-strong) !important;
 }
 
 /* message/attachment tool bar */
 .buttonsInner_SY_P2T.wrapper_Z0MHyc, .wrapper_Z0MHyc {
   border-radius: var(--border-radius-strong);
   border: 1px solid var(--border-subtle);
+}
+.button_Z0MHyc:hover {
+  border-radius: var(--border-radius-strong);
 }
 
 
