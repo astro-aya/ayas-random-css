@@ -82,8 +82,8 @@ section.panels_pog62O {
   border-radius: inherit;
 }
 
-/* quest panel */
-.content__0d616, .wrapper_jdr5pz {
+/* quest panel/only top border radius */
+.content__0d616, .wrapper_jdr5pz, .postEnrollmentBackground_ZzrVHV, .panel_8eCwJY {
   border-radius: var(--border-radius-strong) var(--border-radius-strong) 0 0;
 }
 .content__0d616{
@@ -241,6 +241,9 @@ section.panels_pog62O {
 }
 .peopleListItem_y75PxA .actionButton_5GqXgh {
   background-color: var(--background-base-lowest);
+}
+.peopleList_wVFOQW {
+  padding-bottom: 24px;
 }
 
 
