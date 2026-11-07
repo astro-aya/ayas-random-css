@@ -279,14 +279,14 @@ section.panels_pog62O {
   padding: 4px 8px;
   max-width: fit-content;
 }
-.tabularNumbers_MMUIw6 {
+.typing_U9Tvvz .tabularNumbers_MMUIw6 {
   background-color: var(--background-base-lowest);
   border-radius: var(--border-radius-strong) !important;
   border: 1px solid var(--border-subtle);
   padding: 4px 8px;
 }
 .inTextChannel_U9Tvvz.base_U9Tvvz {
-  padding-left: 6px;
+  padding-left: 16px;
   margin-top: 16px !important;
 }
 .slowModeIcon_bbCgC2 {
