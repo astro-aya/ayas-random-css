@@ -630,6 +630,35 @@ section.panels_pog62O {
 }
 
 
+/* media controls */ 
+.visualMediaItemContainer_idVBIj .hoverButtonGroup_n2rO26 {
+  border-radius: var(--border-radius-strong);
+  background-color: var(--background-base-lowest);
+  border: 2px solid var(--border-subtle);
+}
+.carouselModal_7QK1F9>div>div {
+  background-color: var(--background-surface-highest);
+  border: 1px solid var(--border-muted);
+  border-radius: var(--border-radius-strong);
+}
+.carouselModal_7QK1F9 .author_QGyCSa {
+  padding: 4px 10px 4px 55px;
+  margin-left: -60px;
+  z-index: -1;
+}
+.videoControls_FJ99sr {
+  border-radius: var(--border-radius-strong);
+  width: 95%;
+  padding: 2px;
+  margin: 14px 10px;
+}
+[data-fullscreen="true"] .videoControls_FJ99sr {
+  background-color: var(--border-muted);
+  border-radius: var(--border-radius-strong);
+  margin: 10px 30px;
+}
+
+
 /* pinned messages popup */
 .messagesPopoutWrap_6bgemo {
   border-radius: var(--border-radius-strong);
